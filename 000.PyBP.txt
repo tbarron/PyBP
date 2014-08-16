@@ -9,8 +9,6 @@ v1.0, 2014-08
 The goal of this book is to document a set of best practices for
 coding in Python. Feedback is welcome at conda@integrel.org.
 
-toc::[]
-
 include::001.except.txt[]
 
 include::002.constructor.txt[]

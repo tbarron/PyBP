@@ -1,5 +1,4 @@
-=== #1 Catch exceptions at the top level of your program
-
+=== #1 Provide a general exception handler at the top level of your program
 
 **Why**: Provides a "last resort" opportunity to catch errors.
 This gives you control over the format and content of the error the user
@@ -57,3 +56,11 @@ send a short one line message to the
 user while saving the complete traceback in a log file for later
 reference, which might be a way of
 doing both. So you can have your cake and eat it, too.
+
+[NOTE]
+This entry is not intended to suggest avoiding +try ... except+ blocks
+at lower levels of your program. The +try ... except+ mechanism is the
+standard way of detecting and handling exceptional conditions as your
+code runs. Rather, the intent is to encourage you to put an exception
+catcher at the top level of your program so you have the opportunity
+to see and handle all exceptions that appear if you want to.
