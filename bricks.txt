@@ -1,0 +1,14 @@
+=== #N Design your functions and methods as many tiny bricks rather than a few huge monoliths
+
+**Why**: Small chunks of well-encapsulated code can be put together in
+  lots of different ways to build up more significant functionality.
+  On the other hande, it's much more difficult to reuse 500-line
+  special-purpose routines effectively. Also, small functions are
+  easier to understand and test.
+
+**How**: Limit each function/method to a single task, all at the same
+  level of abstraction.
+
+==== Example
+
+!@! we need a good example here

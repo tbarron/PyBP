@@ -9,7 +9,7 @@ MD = $(wildcard *.md)
 HTML = $(MD:%.md=%.html)
 
 PyBP.html: *.txt
-	asciidoc -o $@ $<
+	asciidoc -a toc -a index -o $@ $<
 
 all : $(HTML)
 

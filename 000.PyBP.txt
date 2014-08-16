@@ -2,8 +2,38 @@
 Anna Conda
 v1.0, 2014-08
 :doctype: book
+:linkattrs:
 
-////
+[preface]
+== Preface
+The goal of this book is to document a set of best practices for
+coding in Python. Feedback is welcome at conda@integrel.org.
+
+toc::[]
+
+include::001.except.txt[]
+
+include::002.constructor.txt[]
+
+include::003.with.txt[]
+
+include::004.context_mgr.txt[]
+
+include::bricks.txt[]
+
+include::method_obj.txt[]
+
+include::cascade.txt[]
+
+indexterm:[Example index entry]
+
+[index]
+== Index
+
+
+////////////////////////////////////////////////////////////////
+Examples
+
 [dedication]
 Example Dedication
 ------------------
@@ -16,31 +46,14 @@ footnotes.
 Books are normally used to generate DocBook markup and the titles of
 the preface, appendix, bibliography, glossary and index sections are
 significant ('specialsections').
-////
-
-[preface]
-== Preface
-The goal of this book is to document a set of best practices for
-coding in Python. Feedback is welcome at conda@integrel.org.
 
 //Preface Sub-section
 //~~~~~~~~~~~~~~~~~~~
 //Preface sub-section body.
 
-include::001.except.txt[]
-
-include::002.constructor.txt[]
-
-include::003.with.txt[]
-
-include::004.context_mgr.txt[]
-
-////
 The First Chapter
 -----------------
 Chapters can contain sub-sections nested up to three deep.
-footnote:[An example footnote.]
-indexterm:[Example index entry]
 
 Chapters can have their own bibliography, glossary and index.
 
@@ -152,18 +165,14 @@ A second glossary term::
 Example Colophon
 ----------------
 Text at the end of a book describing facts about its production.
-////
 
 [bibliography]
 == References
 
-<<ref_1, 1>> http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes/[Python Best Practices presentation, by Vladimir Keleshev]
-
-[index]
-== Index
+footnoteref:[<1>,<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes/[Python
+Best Practices presentation by Vladimir Keleshev]>]
 
 
-////////////////////////////////////////////////////////////////
 The index is normally left completely empty, it's contents being
 generated automatically by the DocBook toolchain.
 ////////////////////////////////////////////////////////////////

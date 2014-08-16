@@ -1,10 +1,13 @@
 === #1 Catch exceptions at the top level of your program
 
+
 **Why**: Provides a "last resort" opportunity to catch errors.
 This gives you control over the format and content of the error the user
 sees.
 
-There are a couple of ways to do this. Here's one:
+**How**:
+There are a couple of ways to do this. The first is by wrapping the
+call to main(), or the contents of main() in a try ... except block.
 
 ==== Example 1
 
@@ -23,7 +26,10 @@ There are a couple of ways to do this. Here's one:
             raise
 ----
 
-Or we can use sys.excepthook
+Another option is to use 
+https://docs.python.org/2/library/sys.html[sys.excepthook] 
+to override Python's default
+handling of uncaught exceptions:
 
 ==== Example 2
 
