@@ -1,0 +1,22 @@
+=== #3 Use with to represent pairs of action that should be taken together.  link:PyBP.html#ref_1[<1>]
+
+**Why**: It's easy to forget the downstream action, especially if
+  there's enough code using the resource to distract you.
+
+==== Example
+
+**Not so good**:
+
+----
+    f = open(filename, 'w')
+    f.write(data)
+    f.close()
+----
+
+**Better**:
+
+----
+    with open(filename, 'w') as f:
+        f.write(data)
+----
+

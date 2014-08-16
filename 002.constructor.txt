@@ -1,0 +1,29 @@
+=== #2 When the constructor finishes, the object should be complete and well-formed  link:PyBP.html#ref_1[<1>]
+
+
+**Why**: If two operations are not tied together by the code but I have to
+remember to followup A with B, sooner or later I'm going to forget B. 
+
+==== Example
+
+**Poor**: 
+
+(Object is not complete when constructor finishes running)
+
+----
+    import Human
+    p = Human.Person()
+    p.name = "George"
+    p.age = 75
+    p.married = True 
+----
+
+**Better**:
+
+----
+    import Human
+    p = Human.Person(name="George", age=75, married=True)
+    # when the constructor completes, all of the members of p are set
+----
+
+
