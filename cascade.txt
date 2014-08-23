@@ -1,10 +1,15 @@
-=== #N Have your object methods that have nothing else to return, return +self+
+'''
+== Cascading Method Calls
 
-**Why**: This allows functions to cascade.
+If an object method has nothing better to return, make it return
++self+.
+
+**Why**: This allows functions to cascade. It also helps satisfy
+  xref:_bricks_not_monoliths[Practice 2].
 
 **How**: Just +return self+ at the end of each method.
 
-==== Example footnoteref:[note_1]
+=== Example footnoteref:[n1]
 
 Instead of this:
 ----

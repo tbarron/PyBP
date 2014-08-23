@@ -1,0 +1,17 @@
+h2 {
+   padding-top: 5em;
+}
+
+a:visited {
+   color: green;
+}
+
+
+#toc .toclevel0 {
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+#toc .toclevel1 {
+   margin-left: .75em;
+}

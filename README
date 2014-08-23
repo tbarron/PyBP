@@ -1,0 +1,10 @@
+Decisions
+
+ - No four space indent at beginning of line is necessary in example
+   code blocks
+
+Questions
+
+ - How do I make +__init__()+ be rendered without the __ being
+   translated to <em> by asciidoc? I just want it in the monospace
+   font.

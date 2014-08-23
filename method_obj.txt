@@ -1,13 +1,20 @@
-=== #N When many lines of code share many args and temp varialbes, use a method object
+'''
+== Method Objects
+
+When many lines of code share many args and temp variables, create a
+method object.
 
 **Why**: Rather than making a big monolithic function, we can use a
   class to decompose the functionality into many small methods while
   keeping the associated data encapsulated.
 
 **How**: Arguments are passed to the class constructor and become
-  object attributes. Variables become object attributes.
+  object attributes. Variables become object attributes. The
+  +{ul}call{ul}+ method can be provided to make the object callable and
+  have it compose the larger task from the small pieces of
+  functionality its methods represent.
 
-==== Example  footnoteref:[note_1]
+=== Example  footnoteref:[n1]
 
 **Instead of this**:
 ----

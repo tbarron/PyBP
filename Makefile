@@ -8,8 +8,8 @@
 MD = $(wildcard *.md)
 HTML = $(MD:%.md=%.html)
 
-PyBP.html: *.txt
-	asciidoc -a toc -a index -o $@ $<
+PyBP.html: *.txt *.css
+	asciidoc -o $@ PyBP.txt
 
 all : $(HTML)
 
@@ -22,3 +22,10 @@ clean:
 sync:
 	rsync -avdzp *.html integrel:~/www/PyBP
 
+
+ASCIIDOC_HTML = asciidoc.py --backend=xhtml11 --conf-file=${LAYOUT}.conf \
+                --attribute icons \
+                --attribute iconsdir=./images/icons \
+                --attribute=badges \
+                --attribute=revision=$VERS  \
+                --attribute=date=$DATE"

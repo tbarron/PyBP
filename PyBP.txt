@@ -1,33 +1,36 @@
-= Python Best Practices
+= Python Best Practices: Writing Software that Just Works
 Anna Conda
 v1.0, 2014-08
 :doctype: book
+:toc2:
+:toclevels: 1
+:numbered:
+:stylesheet: /Users/tbarron/Dropbox/prj/PyBP/PyBP.css
+:ul: __
 :linkattrs:
 
-[preface]
-== Preface
+
+= Preface
 The goal of this book is to document a set of best practices for
-coding in Python. Feedback is welcome at conda@integrel.org.
+coding in Python. The goal of the practices is to produce software
+that just works, is easy to maintain, and is easy to change.
 
-include::001.except.txt[]
+The focus is on Python because that's the language I use every day,
+that I'm most familiar with. I trust that many of the ideas will apply
+to other languages as well.
 
-include::002.constructor.txt[]
+These ideas are rules of thumb that work pretty well most of the time.
+They will not be applicable in every case. In reading and applying
+these ideas, I encourage you to ask yourself, "In this particular
+case, is there a good reason to NOT use this
+practice/technique/pattern?" If the answer is "yes," then don't use
+the pattern, rather do what makes sense.
 
-include::003.with.txt[]
+Feedback is welcome at conda at integrel dot org.
 
-include::004.context_mgr.txt[]
+include::generated.txt[]
 
-include::bricks.txt[]
-
-include::method_obj.txt[]
-
-include::cascade.txt[]
-
-indexterm:[Example index entry]
-
-[index]
-== Index
-
+= References
 
 ////////////////////////////////////////////////////////////////
 Examples
