@@ -4,4 +4,4 @@
 
 
 
-(Always Return Something)[always_return.html]
+[Always Return Something](always_return.html)
