@@ -1,10 +1,8 @@
 ---
-title: Bricks, not Monoliths
+title: 2. Bricks, not Monoliths
 ---
-'''
-== Bricks, Not Monoliths
 
-Design your functions and methods as many tiny bricks rather than a
+Design functions and methods as many tiny bricks rather than a
 few huge monoliths.
 
 **Why**: 
@@ -13,7 +11,6 @@ few huge monoliths.
   of different ways to build up more significant functionality. On the
   other hand, it's difficult to reuse 500-line special-purpose
   routines effectively.
-
 * Small functions are easier to understand and test. It may
   communicate more effectively
   to write a short routine whose purpose and function are obvious from
