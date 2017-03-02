@@ -15,29 +15,27 @@ few huge monoliths.
   communicate more effectively
   to write a short routine whose purpose and function are obvious from
   the name and code than to comment the same code as a chunk embedded
-  in a larger function. footnoteref:[n1]
+  in a larger function.
 
 **How**: Limit each function/method to a single task, all at the same
   level of abstraction.
 
-=== Example
+### Example
 
 **Not very obvious**
-----
-...
-if self.flags & 0b1000:  # Am I visible?
+
     ...
-----
+    if self.flags & 0b1000:  # Am I visible?
+        ...
  
 **Better**
-----
-...
-def is_visible(self):
-    return self.flags & 0b1000
- 
-if self.is_visible():
-    ...
-----
 
-Example is adapted from http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes[Python
-Best Practices Patterns, Vladimir Keleshev] footnoteref:[n1].
+    ...
+    def is_visible(self):
+       return self.flags & 0b1000
+ 
+    if self.is_visible():
+        ...
+
+Example is adapted from
+[Python Best Practices Patterns, Vladimir Keleshev](http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes)

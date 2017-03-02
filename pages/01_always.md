@@ -26,7 +26,7 @@ Unless you have a good reason not to, consider including an explicit
 
 ### Example
 
-**Less good**:
+**Instead of this**:
 
     def function_template(args):
         """
@@ -41,7 +41,7 @@ to be functionally empty (i.e., do nothing). However, a function that ends
 with `pass` does the same thing as one that ends with `return None`. For
 the reasons outlined above, I think `return None` is better.
 
-**More good**:
+**Do this**:
 
     def function_template(args):
         """
