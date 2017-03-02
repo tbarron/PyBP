@@ -3,7 +3,8 @@ title: 2. Bricks, not Monoliths
 ---
 
 Design functions and methods as many tiny bricks rather than a
-few huge monoliths.
+few huge monoliths. Encapsulate non-obvious code in well-named functions so
+it's clear what the call does.
 
 **Why**: 
 
@@ -18,17 +19,17 @@ few huge monoliths.
   in a larger function.
 
 **How**: Limit each function/method to a single task, all at the same
-  level of abstraction.
+  level of abstraction. Name functions so that it's clear what they do.
 
 ### Example
 
-**Not very obvious**
+**Less obvious**
 
     ...
     if self.flags & 0b1000:  # Am I visible?
         ...
  
-**Better**
+**More obvious**
 
     ...
     def is_visible(self):
