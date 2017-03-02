@@ -1,4 +1,6 @@
 Gemfile.lock
+DODO.txt
+_site
 *.html
 *~
 PyBP.fo
