@@ -8,7 +8,6 @@
         {% for page in site.pages %}
           {% if page.url != "/" %}
             <br><a href="{{ page.url }}">{{ page.title }}</a>
-            <br><a href="{{ site.url }}/PyBP/{{ page.path }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
 
