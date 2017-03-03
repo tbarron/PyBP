@@ -2,6 +2,7 @@ Gemfile.lock
 DODO.txt
 _site
 *.html
+.env
 *~
 PyBP.fo
 PyBP.xml
