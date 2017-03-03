@@ -1,5 +1,6 @@
 ---
-title: 2. Bricks, not Monoliths
+title: Bricks, not Monoliths
+order: 2
 ---
 
 Design functions and methods as many tiny bricks rather than a

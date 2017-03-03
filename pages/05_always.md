@@ -1,6 +1,6 @@
 ---
-title: 1. Always Return Something
-layout: minimal
+title: Always Return Something
+order: 5
 ---
 ### (You Do Anyway)
 
@@ -10,8 +10,8 @@ Unless you have a good reason not to, consider including an explicit
 `return` statement at the end of every function and method.
 
 **Why**: One of the
-  http://legacy.python.org/dev/peps/pep-0020/[guiding principles of
-  Python] is "Explicit is better than implicit". If we omit the return
+  [guiding principles of Python](http://legacy.python.org/dev/peps/pep-0020/)
+  is "Explicit is better than implicit". If we omit the return
   statement at the end of a function or method, we're still returning
   something, it just happens to be an invisible `None` value. It's
   better if we make it explicit. That reminds us that we could be

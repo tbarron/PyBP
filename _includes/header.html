@@ -6,8 +6,9 @@
 
         <br><a href="{{site.url}}{{site.baseurl}}">Introduction</a>
         {% for page in site.pages %}
-          {% if page.url != "/" %}
-            <br><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+          {% if page.url != "/" and page.title != "" %}
+            <br><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+                {{ page.order | append: "." }} {{ page.title }}</a>
           {% endif %}
         {% endfor %}
 
