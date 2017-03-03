@@ -1,3 +1,11 @@
+---
+title: README
+---
+
+site.url: {{ site.url }}
+
+site.baseurl: {{ site.baseurl }}
+
 ISSUES
 
   * URL SENSITIVITY: Locally, site.url is "https://localhost:4000". When
@@ -18,3 +26,9 @@ ISSUES
     they check whether tbarron is an org or a user and make the wrong
     choice because my account is associated with the ORNL TechInt org. As
     far as I can tell, this is harmless, just annoying.
+
+RESOLVED
+
+  * RENDERING: Having trouble getting some of the pages to render properly
+    on tbarron.github.io.
+
