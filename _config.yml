@@ -3,6 +3,6 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: default
 
 title: Python Best Practices
