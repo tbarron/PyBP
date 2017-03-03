@@ -7,3 +7,8 @@ defaults:
       layout: "minimal"
 
 title: Python Best Practices
+
+description: 
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
