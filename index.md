@@ -1,5 +1,6 @@
 ---
 title: Python Best Practices
+layout: minimal
 ---
 
 ### Introduction
