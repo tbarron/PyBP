@@ -1,5 +1,7 @@
 ---
 title: Introduction
+order: 0
+next: pages/01_change.html
 ---
 
 <==  [==>]({{page.next}})
