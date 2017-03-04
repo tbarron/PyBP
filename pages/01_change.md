@@ -1,6 +1,6 @@
 ---
 title: Response over Prediction
-prev: index.html
+prev: /index.html
 order: 1
 next: 02_convention.html
 ---
