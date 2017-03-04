@@ -1,5 +1,11 @@
-'''
-== Respond to Change
+---
+title: Response over Prediction
+prev: index.html
+order: 1
+next: 02_convention.html
+---
+
+[<==]({{page.prev}}) [==>]({{page.next}})
 
 Yogi Berra has been quoted as having said, "It's really hard to make
 predictions, especially about the future." This is nowhere more true
@@ -14,28 +20,20 @@ Instead, respond to change.
 **Why**: "It's really hard to make
 predictions, especially about the future."
 
-**How**: In a recent
-http://pragdave.me/blog/2014/03/04/time-to-kill-agile/[anti-"Agile"
-screed] on his blog, http://pragdave.me/, Dave Thomas outlines the
+**How**: In a 2014 [anti-"Agile" screed](https://pragdave.me/blog/2014/03/04/time-to-kill-agile.html)
+on his blog, http://pragdave.me/, Dave Thomas outlines the
 following process model:
 
 1. Find out where you are
 2. Take a small step towards your goal
 3. Adjust your understanding based on what you learned
 4. Repeat
-* When faced with two or more alternatives that deliver roughly the same
+
+When faced with two or more alternatives that deliver roughly the same
 value, take the path that makes future change easier.
-footnoteref:[n4,http://pragdave.me/blog/2014/03/04/time-to-kill-agile/[Agile
-Is Dead (Long Live Agility)]]
 
+### References
 
+  * [Agile Is Dead (Long Live Agility)](http://pragdave.me/blog/2014/03/04/time-to-kill-agile/),
+    Dave Thomas, March 4, 2014.
 
-=== Example
-
-----
-
-----
-
-----
-
-----
