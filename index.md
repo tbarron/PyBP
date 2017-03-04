@@ -1,7 +1,7 @@
 ---
 title: Introduction
 order: 0
-next: pages/01_change.html
+next: /pages/01_change.html
 ---
 
 <==  [==>]({{site.baseurl}}{{page.next}})
