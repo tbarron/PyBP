@@ -1,6 +1,6 @@
 ---
 title: Object Completeness
-prev: 18_always.html
+prev: 18_cascade.html
 order: 19
 next: 20_???.html
 ---
