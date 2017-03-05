@@ -1,5 +1,11 @@
-'''
-== Context Managers
+---
+title: Context Managers
+prev: 13_with.html
+order: 14
+next: 15_method_obj.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 Compose your own context manager to control a resource
 

@@ -1,5 +1,11 @@
-'''
-== True Good, False Bad
+---
+title: True Good, False Bad
+prev: 15_method_obj.html
+order: 16
+next: 17_always.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 Some interfaces use zero to indicate success and a non-zero value to
 indicate failure. In Python, True means success and False means

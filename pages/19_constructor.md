@@ -1,5 +1,11 @@
-'''
-== Object Completeness
+---
+title: Object Completeness
+prev: 18_always.html
+order: 19
+next: 20_???.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 When the constructor finishes, the object should be complete and well-formed
 

@@ -1,8 +1,12 @@
 ---
 title: Always Return Something
-order: 5
+prev: 16_inverse.html
+order: 17
+next: 18_cascade.html
 ---
 ### (You Do Anyway)
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 A function with no return statement returns `None`. We can always tack
 a `return None` onto the end of a function and make it explicit.

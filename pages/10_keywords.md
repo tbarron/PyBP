@@ -1,5 +1,11 @@
-'''
-== Python Built-Ins
+---
+title: Python Built-Ins
+prev: 09_foundation.html
+order: 10
+next: 11_mod.docstring.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 Be aware of 
 https://docs.python.org/2/library/functions.html[Python's reserved words]

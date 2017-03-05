@@ -1,5 +1,11 @@
-'''
-== Function Docstrings
+---
+title: Function Docstrings
+prev: 11_mod.docstring.html
+order: 12
+next: 13_with.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 For each function that you write, provide a docstring describing the
 purpose it serves in the overall context of the program.

@@ -1,5 +1,11 @@
-'''
-== Cascading Method Calls
+---
+title: Cascading Method Calls
+prev: 17_always.html
+order: 18
+next: 19_constructor.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 If an object method has nothing better to return, make it return
 +self+.

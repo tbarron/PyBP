@@ -1,5 +1,11 @@
-'''
-== Module Docstrings
+---
+title: Module Docstrings
+prev: 10_keywords.html
+order: 11
+next: 12_func.docstring.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 For each module that you write, provide a docstring describing the
 purpose it serves in the overall context of the program.

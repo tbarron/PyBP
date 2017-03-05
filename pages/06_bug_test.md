@@ -1,7 +1,12 @@
 ---
 title: Find a Bug, Write a Test
-order: 1
+prev: 05_bricks.html
+order: 6
+next: 07_tdd.html
 ---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
+
 ### (aka, Test Driven Development)
 You just found a bug in your code. What's the first thing you do?
 

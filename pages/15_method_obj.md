@@ -1,5 +1,11 @@
-'''
-== Method Objects
+---
+title: Method Objects
+prev: 14_context_mgr.html
+order: 15
+next: 16_inverse.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 When many lines of code share many args and temp variables, create a
 method object.

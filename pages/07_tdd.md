@@ -1,5 +1,11 @@
-'''
-== Test Driven Development
+---
+title: Test Driven Development
+prev: 06_bug_test.html
+order: 7
+next: 08_what_matters.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 Write one or more test functions for each program function. Use a test
 runner like http://pytest.org/latest/[+py.test+],

@@ -1,5 +1,11 @@
-'''
-== Don't Repeat Yourself
+---
+title: Don't Repeat Yourself (DRY)
+prev: 02_convention.html
+order: 3
+next: 04_except.html
+---
+
+[<==]({{page.prev}}) [==>]({{page.next}})
 
 Code each action exactly once. When you need to do it multiple times,
 or do it in conjunction with some other operation, call the routine or object
@@ -24,8 +30,24 @@ catalog.
   Upstream functions will call these primitives. Keep static messages
   in a message catalog and use them from there.
 
-=== Example
+### Example
 
-----
-!@!Need an example here
-----
+**Don't do this**
+
+    if os.path.exists('abcfile'):
+        os.unlink('abcfile')
+    if os.path.exists('foofile'):
+        os.unlink('foofile')
+    if os.path.exists('junk'):
+        os.unlink('junk')
+
+
+**Do this instead**
+
+    def conditional_unlink(filename):
+        if os.path.exists(filename):
+            os.unlink(filename)
+
+    conditional_unlink('abcfile')
+    conditional_unlink('foofile')
+    conditional_unlink('junk')

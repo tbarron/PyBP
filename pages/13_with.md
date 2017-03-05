@@ -1,5 +1,11 @@
-'''
-== Leak Prevention
+---
+title: Leak Prevention
+prev: 12_func.docstring.html
+order: 13
+next: 14_context_mgr.html
+---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 Use +with+ to represent pairs of action that should be taken together
 so that you avoid resource leakage over time. footnoteref:[n1]

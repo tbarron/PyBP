@@ -1,11 +1,11 @@
 ---
 title: Response over Prediction
-prev: index.html
+prev: /index.html
 order: 1
 next: 02_convention.html
 ---
 
-[<==]({{site.url}}{{site.baseurl}}{{page.prev}}) [==>]({{page.next}})
+[<==]({{page.prev}}) [==>]({{page.next}})
 
 Yogi Berra has been quoted as having said, "It's really hard to make
 predictions, especially about the future." This is nowhere more true

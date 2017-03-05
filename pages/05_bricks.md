@@ -1,7 +1,11 @@
 ---
 title: Bricks, not Monoliths
-order: 2
+prev: 04_except.html
+order: 5
+next: 06_bug_test.html
 ---
+
+[<==]({{site.baseurl}}{{page.prev}}) [==>]({{site.baseurl}}{{page.next}})
 
 Design functions and methods as many tiny bricks rather than a
 few huge monoliths. Encapsulate non-obvious code in well-named functions so
