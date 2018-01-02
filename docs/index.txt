@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Python Best Practices: Software that Just Works
-===============================================
+Python Best Practices 
+=====================
+Software that Just Works
+------------------------
 
 .. toctree::
    :maxdepth: 2
