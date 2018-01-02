@@ -13,7 +13,7 @@ Software that Just Works
    :caption: Contents:
 
    preface
-
+   python3
 
 Indices and tables
 ==================
