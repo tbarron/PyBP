@@ -1,5 +1,5 @@
 Preface
-=======
+-------------------
 
 These are some best practices I've formulated for myself over a decade of
 using and learning Python. I hope you'll find them useful.
