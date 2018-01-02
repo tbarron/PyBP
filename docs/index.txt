@@ -4,9 +4,9 @@
    contain the root `toctree` directive.
 
 Python Best Practices 
-=====================
-Software that Just Works
-------------------------
+============================================================
+Writing Software that Just Works
+------------------------------------------------------------
 
 .. toctree::
    :maxdepth: 2
