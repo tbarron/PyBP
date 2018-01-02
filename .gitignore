@@ -6,3 +6,7 @@ _site
 *~
 PyBP.fo
 PyBP.xml
+docs/__pycache__
+docs/_build
+pages/*
+venv
