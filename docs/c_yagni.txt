@@ -1,0 +1,23 @@
+.. include:: i_rule.txt
+
+You Ain't Gonna Need It
+------------------------------------------------------------
+
+When considering how to solve a problem, ask yourself, "What is the
+simplest thing I could do that might possibly work?" Then do that, at
+least as a first approximation to the solution. You may have to
+revisit it and improve it, but you may not.
+
+Don't add stuff you may need in the future. When you need it, add it,
+but not before. If you wait, it may turn out that you never need it.
+
+**Why**:
+
+- Most of the time, when I have spent time putting in features "just in
+  case", I wound up not needing them. In effect, that time was wasted.
+
+**How**:
+
+- Focus on what your software needs to do right now and make it do just
+  that as well as possible. Avoiding scope and feature creep will leave you
+  more time to get the required features right as simply as possible.

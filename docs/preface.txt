@@ -1,9 +1,0 @@
-Preface
--------------------
-
-These are some best practices I've stolen from colleagues and formulated
-for myself over the course of a decade of learning and using Python. I hope
-the fact that it's mildly opinionated is justified by the effectiveness of
-the practices in making code easier to maintain and change.
-
-I hope you'll find this material useful.

@@ -1,0 +1,48 @@
+Preface
+-----------------------------------------------------------------
+
+These are some best practices I've stolen from colleagues and formulated
+for myself over the course of a decade of learning and using Python. I hope
+the fact that it's mildly opinionated is justified by the effectiveness of
+the practices in making code easier to maintain and change.
+
+As in most areas of life, common sense is required and there are no
+guarantees that every practice will apply in every situation. One has to
+use good judgement. Of course, good judgement comes with experience and a
+lot of that comes from poor judgement.
+
+
+Standard Disclaimers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+These ideas are rules of thumb that work pretty well for me most of the
+time. They will not be applicable in every case. In reading and applying
+these ideas, I encourage you to ask yourself, "In this particular case, is
+there a good reason to NOT use this practice/technique/pattern?" If the
+answer is "yes," then don’t use the pattern, rather do what makes sense.
+
+- Your mileage may vary.
+
+- Every statement is a hypothesis, subject to being debunked by future
+  information.
+
+- Lord willing and the creek don't rise.
+
+- Unless we get a better offer.
+
+- Unless circumstance intervene.
+
+- Every statement of intention is a current plan that may or may not be
+  realized.
+
+- Last time I looked.
+
+- If present trends continue.
+
+- Past results are no guarantee of future performance.
+
+- This is not an exhaustive list.
+
+
+I hope you'll find these ideas useful.
+

@@ -1,0 +1,39 @@
+.. include:: i_rule.txt
+
+Instead of Predicting the Future, Respond to Change 
+------------------------------------------------------------
+
+Yogi Berra has been quoted as having said, "It's really hard to make
+predictions, especially about the future." This is nowhere more true
+than in software engineering. An approach that calls for capturing
+requirements and documenting a ginormous design followed by six months
+of coding implicitly assumes that at the beginning of the project we
+can predict what will be needed from the software we're writing at the
+end of the project, possibly years later.
+
+Instead of predicting the future badly, focus on responding to change as it
+happens.
+
+**Why**:
+
+ - "It's really hard to make predictions, especially about the future."
+
+**How**:
+
+  * In a 2014 anti-Agile_ screed on his blog_, Dave Thomas outlines the
+    following process model:
+
+    1. Find out where you are
+    2. Take a small step towards your goal
+    3. Adjust your understanding based on what you learned
+    4. Repeat
+
+As a general guideline, he offers, "When faced with two or more
+alternatives that deliver roughly the same value, take the path that makes
+future change easier." [#thomas]_
+
+
+.. _anti-Agile: http://pragdave.me/blog/2014/03/04/time-to-kill-agile
+.. _blog: http://pragdave.me/
+.. [#thomas] http://pragdave.me/blog/2014/03/04/time-to-kill-agile
+

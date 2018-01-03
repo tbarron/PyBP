@@ -1,0 +1,99 @@
+.. include:: i_rule.txt
+
+Use Hard Edged Foundations, Especially in Primitive Layers
+------------------------------------------------------------
+
+Some tools provide forgiving interfaces that say, "Do this operation
+if it's appropriate." This allows the caller to ignore error handling at
+the cost of having an accurate picture of what's going on inside the box.
+
+An example from SQL is the conditional table creation syntax.
+::
+
+    create table foo if not exists
+
+Similarly, tables can be dropped conditionally.
+::
+
+    drop table foo if exists
+
+
+Such operations always appear successful, whether or not the table was
+created or deleted. The caller has no way of knowing whether the table
+existed and got dropped or nothing happened at all.
+
+This is great for user interfaces since users just want to get the task
+done. They aren't necessarily tracking the internal state of the system. If
+they are, they can explicitly check for the existence of the table before
+trying to drop it.
+
+"Hard-edged"  interfaces, on the other hand, provide clear feedback about
+whether assets exist and whether requested operations are successful or
+not. For example,
+::
+
+    $ ls padawan
+    ls: padawan: No such file or directory     # the file does not exist
+    $ rm padawan
+    rm: padawan: No such file or directory     # command failed
+    $ echo $status                             # we can query the status
+    1
+
+    $ ls jedi
+    jedi                                       # the file DOES exist
+    $ rm jedi                                  # the command succeeds
+    $ echo $status
+    0                                          # success!
+
+(Note the relationship to true good, false bad)
+
+Build your software in layers with the most primitive layers providing a
+hard-edged foundation for the layers above. If it makes sense, you can
+provide a softer interface at the top for the user but a hard-edged
+foundation will make it easier for your software to 
+maintain an accurate picture of system state.
+
+
+**Why**:
+
+* For your software to maintain an accurate picture of system state,
+  it needs hard-edged interfaces that return explicit outcome indicators.
+
+**How**:
+
+* Establish the meaning of signals like True and False early and
+  stick with the definitions you decide on. (also see Internal Conventions)
+  
+Keep your semantics as consistent as possible (that is, avoid having one
+set of functions use True to indicate success and False to indicate failure
+while another set does the opposite).
+  
+Insist on your low level routines returning a clear indication of success
+or failure. No news is not good news. No news is no news.
+
+Examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Not so good**::
+
+    def frobnicate_the_frogwhistle():
+        ... code ...
+        # no return statement
+    
+**Better**::
+
+    def frobnicate_the_frogwhistle():
+        ... code ...
+        if something_went_wrong:
+            return False
+        else
+            return True
+        
+**Perhaps even better (more explicit)**::
+
+    def frobnicate_the_frogwhistle():
+        ... code ...
+        # report a percentage of frobnication (0 to 100)
+        frobnication = 100.0 * float(frobin) / float(frogwhis)
+        return frobnication
+
