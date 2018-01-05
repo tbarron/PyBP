@@ -12,11 +12,11 @@ Writing Software that Just Works
    :maxdepth: 2
    :caption: Contents:
 
-   s_preface
-   s_general
-   s_funcmeth
-   s_resource
-   s_documentation
+   s-preface
+   s-general
+   s-funcmeth
+   s-resource
+   s-documentation
 
 Indices and tables
 ==================
