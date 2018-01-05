@@ -1,13 +1,20 @@
 Write Idiomatic Python
 ------------------------------------------------------------
 
-Write idiomatic Python. Approach your tasks Pythonically.
+  idiomatic
+    - *adj.* Peculiar to or characteristic of a given language.
+    - *adj.* Characterized by proficient use of idiomatic expressions.
+       - `from the American Heritage Dictionary of the English Language, 4th Edition <https://www.wordnik.com/words/idiomatic>`_
+
+Learn what constitutes idiomatic Python, or Pythonic code, and apply that
+knowledge consistently. Except in code obfuscation contests, you don't win
+points by writing code that is intentionally difficult to understand.
 
 **Why**:
 
 * Other programmers (including you two years from now, when revisiting the
   code you wrote yesterday) will find it easier to understand code written
-  in terms of normal, expected Python patterns.
+  in terms of conventional, well-understood Python patterns.
 
 **How**:
 
@@ -16,17 +23,15 @@ Write idiomatic Python. Approach your tasks Pythonically.
   <https://jeffknupp.com/writing-idiomatic-python-ebook/>`_ by Jeff Knupp.
 
 * If you find yourself struggling to get an awkward, hard-to-understand
-  line of code to work, suspect that there's a clearer, more succinct way
-  to do it. For example, as a beginning Pythonista, I often resorted to
-  using eval() to parse top level expressions to achieve introspection when
-  I didn't know a more direct way::
+  line of code to work, suspect that there's a cleaner, simpler, more
+  succinct way to do it. For example, as a beginning Pythonista, I often
+  resorted to using eval() to parse top level expressions to achieve
+  introspection when I didn't know a more direct way::
 
     name = get_method_name()
     result = eval('myclass.{}({}, {})'.format(name, arg1, arg2))
 
-  The Pythonic approach uses the getattr() built-in function::
+  A more Pythonic approach uses the getattr() built-in function::
 
     meth = getattr(myclass, get_method_name())
     result = meth(arg1, arg2)
-
-

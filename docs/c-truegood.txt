@@ -2,11 +2,12 @@ True Good, False Bad
 ------------------------------------------------------------
 
 Some interfaces use zero to indicate success and a non-zero value to
-indicate failure. In Python, True means success and False means
-failure.
+indicate failure. In Python, on the other hand, True typically means
+success while False means failure.
 
-If you have to deal with a crazy interface, wrap it in such a way that
-it makes pythonic sense to the rest of your code.
+If you have to deal with a crazy interface (like the Unix shell, where 0
+indicates success and a non-zero value indicates failure), wrap it in such
+a way that it makes pythonic sense to the rest of your code.
 
 **Why**:
 
@@ -15,7 +16,7 @@ it makes pythonic sense to the rest of your code.
 
 **How**:
 
-* You can use, for example, +not bool(rc)+ to translate 0 to True
+* You can use, for example, ``not bool(rc)`` to translate 0 to True
   and 1 to False.
 
 Example [#greenfeld]_

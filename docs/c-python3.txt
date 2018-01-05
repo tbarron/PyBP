@@ -2,7 +2,7 @@ Use Python 3
 ---------------------------
 
 Use Python 3. If you *are* still using Python 2, do whatever it takes to
-get to Python 3. For goodness sake, don't start any new projects based on
+get to Python 3. Whatever you do, don't start any new projects based on
 Python 2.x.
 
 **Why**:
@@ -17,14 +17,27 @@ Python 2.x.
 
 **How**:
 
-* Use the 2to3_ tool. Its page contains a list of the fixers the 2to3 tool
-  runs.
+* Learn the differences_ between Python 2 and Python 3 and start writing
+  Python 3 friendly code now. The page linked in the previous sentence
+  suggests constructions that work for both later releases of Python 2 and
+  Python 3.
+
+* Use the 2to3_ tool. Its page contains a list of the fixers it runs, each
+  addressing a particular difference between the versions.
 
 * When you do have to write Python 2 for whatever reason, make your code as
   friendly as possible to the version 3 interpreter. For example, use
   parentheses on 'print' statements, even though version 2 doesn't require
   it.
 
+* The `__future__ <https://docs.python.org/3.6/library/__future__.html>`_
+  module (part of Python itself) and future_ module (no underscores, a third
+  party module availble through the Python package index) provide support
+  for writing Python 3 code that will also run without error on the more
+  recent Python 2 interpreters.
+
 .. _PEP_373: https://www.python.org/dev/peps/pep-0373/
 .. _pythonclock.org: https://pythonclock.org
 .. _2to3: https://docs.python.org/3.6/library/2to3.html
+.. _differences: https://docs.python.org/3/whatsnew/3.0.html
+.. _future: http://python-future.org

@@ -1,9 +1,9 @@
-You Ain't Gonna Need It
+You Aren't Gonna Need It
 ------------------------------------------------------------
 
 When considering how to solve a problem, ask yourself, "What is the
 simplest thing I could do that might possibly work?" Then do that, at
-least as a first approximation to the solution. You may have to
+least as a first approximation to the solution. You *may* have to
 revisit it and improve it, but you may not.
 
 Don't add stuff you may need in the future. When you need it, add it,

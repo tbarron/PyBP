@@ -1,9 +1,9 @@
 Use Hard Edged Foundations, Especially in Primitive Layers
-------------------------------------------------------------
+---------------------------------------------------------------
 
-Some tools provide forgiving interfaces that say, "Do this operation
-if it's appropriate." This allows the caller to ignore error handling at
-the cost of having an accurate picture of what's going on inside the box.
+Some tools provide forgiving interfaces that say, "Do this operation if
+it's appropriate." This allows the caller to ignore error handling at the
+cost of having an accurate picture of what's going on under the covers.
 
 An example from SQL is the conditional table creation syntax.
 ::
@@ -27,7 +27,7 @@ trying to drop it.
 
 "Hard-edged"  interfaces, on the other hand, provide clear feedback about
 whether assets exist and whether requested operations are successful or
-not. For example,
+not. An example is the Unix file system:
 ::
 
     $ ls padawan
@@ -43,7 +43,9 @@ not. For example,
     $ echo $status
     0                                          # success!
 
-(Note the relationship to true good, false bad)
+(Notice how the status values returned in the shell exemplify the kind of
+semantic inversion discussed in in `True Good, False Bad
+<s-funcmeth.html#id4>`_)
 
 Build your software in layers with the most primitive layers providing a
 hard-edged foundation for the layers above. If it makes sense, you can
@@ -59,8 +61,9 @@ maintain an accurate picture of system state.
 
 **How**:
 
-* Establish the meaning of signals like True and False early and
-  stick with the definitions you decide on. (also see Internal Conventions)
+* Establish the meaning of signals like True and False early and stick with
+  the definitions you decide on (see also `Internal Conventions
+  <s-general.html#define-internal-conventions>`_).
   
 Keep your semantics as consistent as possible (that is, avoid having one
 set of functions use True to indicate success and False to indicate failure

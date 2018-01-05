@@ -1,37 +1,40 @@
 Test Driven Development
 ------------------------------------------------------------
 
-Write one or more test functions for each program function. Use a test
-runner like py.test_, nosetests_, or green_ to discover and run tests
-regularly.
+Write one or more test functions for each program function. Ideally, write
+the tests before writing the program function. Use a test runner like
+py.test_, nosetests_, or green_ to discover and run your test suite
+regularly (like, every time your code changes).
 
 **Why**:
 
-* Having a comprehensive set of unit tests allows you to make changes to
-  your code with confidence. If you break anything accidentally, your test
-  suite will let you know.
+* A comprehensive set of unit tests allows us to make changes with
+  confidence. If we break anything accidentally, our test suite will let us
+  know.
 
 **How**:
 
 * Ideally, we would write our test functions first and use our test
   functions to specify the precise behavior expected of the application
-  functions. Then, as we write the application functions, run the tests to
-  assess your progress. In this theoretical scenario, once all your tests
-  pass, your application is done.
+  functions. Then, as we write the application functions, we can run the
+  tests to assess progress toward completing the application functions. In
+  this theoretical scenario, once all the tests pass, the application is
+  done.
 
 * In practice, my experience has been that it's about as hard to write
   correct test code as it is to write correct application code. So I
   usually wind up developing my test and application functions together.
-  Working on the application function shows me where I have messed up test
+  Working on the application functions shows me where I have messed up test
   functions, which have to be corrected before I can the get related
   application function right.
 
 Read the documentation for your test runner to understand how it discovers
-tests and how it expects you to set tests up. Most of them check files that
-match a glob expression like `test_*.py` in directoriess that typically
-have to match something like `test*` and then run functions and classes
-with names that include the string +test+. Some, like py.test, will run
-stand-alone functions so you don't have to create test classes.
+tests and how it expects tests to be set up. Most of them scan project
+files and directories whose names contain the string ``test``, run class
+methods with names that include the string ``test``. One reason I prefer
+py.test is that it will run stand-alone functions so I don't have to create
+classes to contain my tests.
+
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,7 +62,7 @@ Example
         return rval
 
 
-**test_dates.py**::
+**test_dates.py** (using unittest)::
 
     import unittest
 
@@ -73,7 +76,7 @@ Example
                              date_arith(1388552400, -7, "hour"))
 
 
-**With py.test, tests can be as simple as**::
+**With py.test, the same tests can be as simple as**::
 
     def test_zero():
         assert "2014.0101 00:00:00" == date_arith(1388552400, 0)

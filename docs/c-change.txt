@@ -1,4 +1,4 @@
-Instead of Predicting the Future, Respond to Change 
+Instead of Predicting the Future, Respond to Change
 ------------------------------------------------------------
 
 Yogi Berra has been quoted as having said, "It's really hard to make
@@ -18,8 +18,8 @@ happens.
 
 **How**:
 
-  * In a 2014 anti-Agile_ screed on his blog_, Dave Thomas outlines the
-    following process model:
+  * In a 2014 anti-Agile_ [#thomas]_ screed on his blog_, Dave Thomas
+    outlines the following process model:
 
     1. Find out where you are
     2. Take a small step towards your goal
@@ -28,10 +28,10 @@ happens.
 
 As a general guideline, he offers, "When faced with two or more
 alternatives that deliver roughly the same value, take the path that makes
-future change easier." [#thomas]_
+future change easier."
 
 
 .. _anti-Agile: http://pragdave.me/blog/2014/03/04/time-to-kill-agile
 .. _blog: http://pragdave.me/
-.. [#thomas] http://pragdave.me/blog/2014/03/04/time-to-kill-agile
+.. [#thomas] `Dave Thomas: "Time to Kill Agile <http://pragdave.me/blog/2014/03/04/time-to-kill-agile>`_
 

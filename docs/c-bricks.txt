@@ -3,7 +3,7 @@ Make Bricks, Not Monoliths
 
 Design your functions and methods as many tiny bricks rather than a few
 huge monoliths. Encapsulate non-obvious code in well-named functions so
-it's clear what the call does.
+it's clear what each function does.
 
 **Why**:
 
@@ -12,11 +12,10 @@ it's clear what the call does.
   other hand, it's difficult to reuse 500-line special-purpose
   routines effectively.
 
-* Small functions are easier to understand and test. It may
-  communicate more effectively
-  to write a short routine whose purpose and function are obvious from
-  the name and code than to comment the same code as a chunk embedded
-  in a larger function. footnoteref:[n1]
+* Small functions are easier to understand and test. Well-named short
+  routines whose purpose and function are obvious from the name and code
+  often communicate more effectively than the same code embedded in a
+  larger function, even commented.
 
 **How**:
 
