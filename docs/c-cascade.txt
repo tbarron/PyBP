@@ -16,8 +16,11 @@ If an object method has nothing better to return, make it return
 
 * Just ``return self`` at the end of each method.
 
-Example footnoteref:[n1]
+Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
 
 **Instead of this**::
 

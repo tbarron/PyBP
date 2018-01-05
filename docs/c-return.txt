@@ -50,5 +50,3 @@ reasons outlined above, I think +return None+ is better.
         This is the docstring
         """
         return None
-
-.. _PEP_0020: http://legacy.python.org/dev/peps/pep-0020/

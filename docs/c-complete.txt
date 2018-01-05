@@ -20,6 +20,9 @@ attributes.
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
+
 **Instead of this**::
 
     import Human
@@ -38,8 +41,4 @@ Example
 
  <2> When the constructor completes, all of the members of p are set. 
 
-The example is adapted from
-http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes[Python
-Best Practices Patterns, Vladimir Keleshev]
-footnoteref:[n1,http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes[Python Best Practice Patterns]]
 

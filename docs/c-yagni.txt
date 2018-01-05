@@ -19,3 +19,6 @@ but not before. If you wait, it may turn out that you never need it.
 - Focus on what your software needs to do right now and make it do just
   that as well as possible. Avoiding scope and feature creep will leave you
   more time to get the required features right as simply as possible.
+
+
+`Ron Jeffries, co-founder of Extreme Programming on YAGNI <https://ronjeffries.com/xprog/articles/practices/pracnotneed/>`_

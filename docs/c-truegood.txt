@@ -18,7 +18,7 @@ it makes pythonic sense to the rest of your code.
 * You can use, for example, +not bool(rc)+ to translate 0 to True
   and 1 to False.
 
-Example
+Example [#greenfeld]_
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Not so good**::
@@ -36,7 +36,5 @@ Example
         rc = crazy_api(*args)
         return not bool(rc)
 
-Example adapted from
-http://www.slideshare.net/pydanny/python-worst-practices[Python Worst
-Practices, Daniel Greenfeld]
-footnoteref:[n3]
+.. [#greenfeld] adapted from `Python Worst Practices, Daniel Greenfeld
+   <http://www.slideshare.net/pydanny/python-worst-practices>`_

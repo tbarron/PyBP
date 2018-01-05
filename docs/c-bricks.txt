@@ -23,8 +23,11 @@ it's clear what the call does.
 * Limit each function/method to a single task, all at the same
   level of abstraction.
 
-Example [#loria]_
+Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
 
 **Not so good**::
 
@@ -48,6 +51,3 @@ Example [#loria]_
     ...
     if self.is_visible():
         ...
-
-
-.. [#loria] http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes
