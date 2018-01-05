@@ -1,0 +1,43 @@
+Convention Over Configuration
+------------------------------------------------------------
+
+You *can* set up a Python project any way you want. You may even be
+able to tweak environment variables and write infrastructure support
+code until something actually works. But it will be a lot easier if
+you learn and use the conventions of the Python infrastructure that's
+already defined.
+
+**Why**:
+
+- Because if we keep reinventing the wheel, we'll never get to Denver.
+
+**How**:
+
+* Learn how to layout a python project, use setup.py, distutil, inspect, etc.
+
+If you're ready to move to Python 3 (or already there), here are the
+corresponding links:
+
+Here are the definitive links for 
+
+* `An Introduction to Distutils (3.6.3) <https://docs.python.org/3/distutils/introduction.html>`_
+
+* `Writing the Setup Script (3.6.3) <https://docs.python.org/3/distutils/setupscript.html>`_
+
+A basic python project template is available from the Python Package Index:
+
+* https://pypi.python.org/pypi/python_boilerplate_template
+
+If you're stilling using Python 2.x (please shift to Python 3 as soon as
+you can), here are the corresponding links:
+
+* https://docs.python.org/2/distutils/introduction.html
+* https://docs.python.org/2/distutils/setupscript.html
+
+The python boilerplate template is not version sensitive, so it will work
+with either version of Python.
+
+Jeff Knupp outlines the process in great detail in his post
+`Open Sourcing a Python Project the Right Way
+<https://jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/>`_.
+

@@ -1,0 +1,34 @@
+Meaning of Underscores
+------------------------------------------------------------
+
+Beginning an identifier with a single underscore in Python indicates that
+it is intended for internal use.
+
+According to PEP-8:
+
+    _single_leading_underscore: weak "internal use" indicator. E.g. ``from
+    M import *`` does not import objects whose name starts with an
+    underscore.
+
+Beginning an identifier for a class attribute with a double underscore
+leads to "name mangling" in which the identifier is replaced with
+``_classname__identifier`` to discourage access from the outside. No blocks
+beside obfuscation are put around the variable, so, in the words of xxx,
+"it still is possible for a determined soul to access or modify a variable
+that is considered private."
+
+From `The Python Tutorial > Classes > Private Variables
+<https://docs.python.org/3/tutorial/classes.html#private-variables>`_,
+
+    Any identifier of the form __spam (at least two leading underscores, at
+    most one trailing underscore) is textually replaced with
+    _classname__spam, where classname is the current class name with
+    leading underscore(s) stripped. This mangling is done without regard to
+    the syntactic position of the identifier, as long as it occurs within
+    the definition of a class.
+
+    Name mangling is helpful for letting subclasses override methods
+    without breaking intraclass method calls.... Note that the mangling
+    rules are designed mostly to avoid accidents; it still is possible to
+    access or modify a variable that is considered private. This can even
+    be useful in special circumstances, such as in the debugger.

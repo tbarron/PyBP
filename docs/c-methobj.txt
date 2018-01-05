@@ -1,0 +1,67 @@
+Method Objects
+------------------------------------------------------------
+
+When many lines of code share lots of args and temp variables, consider
+using a method object.
+
+**Why**:
+
+* Rather than making a big monolithic function, or a bunch of apparently
+  unrelated functions, we can use a class to decompose the functionality
+  into many small methods while keeping the associated data encapsulated.
+
+**How**:
+
+* In the class constructor, provide arguments for each of the values that
+  need to be tracked and assign those to object attributes. The
+  ``__call__`` method can then use other object methods and attributes to
+  compose the larger overall task.
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Instead of this**::
+
+    def send_task(self, task, job, obligation):
+        ...
+        processed = process_data(...)
+        ...
+        copied = copy_data(...)
+        ...
+        executed = frobnicate(...)
+        100 more lines
+
+**Do this**::
+
+    class TaskSender:
+        def __init__(self, task, job, obligation):
+            self.task = task
+            self.job = job
+            self.obligation = obligation
+            self.processed = []
+            self.copied = []
+            self.executed = []
+ 
+        def __call__(self):
+            self.prepare()
+            self.process()
+            self.execute()
+
+        def prepare():
+            # do something
+
+        def process():
+            # do something
+
+        def execute():
+            # do something
+
+**Usage**::
+
+    x = TaskSender(12345, 'series15', 'background')   <1>
+    x()                                               <2>
+
+ <1> Runs the __init__() method, setting object attributes on new
+ object x.
+ <2> Runs the __call__() method, calling the subordinate object
+ methods.

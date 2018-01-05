@@ -1,0 +1,95 @@
+Use Context Managers
+------------------------------------------------------------
+
+Compose your own context managers to control resources.
+
+**Why**:
+
+* Get the same automatic disposition of resources for your code that comes
+  with built in context managers like ``open``.
+
+**How**:
+
+* Use the contextmanager function decorator from the Python `contextlib
+  module <https://docs.python.org/3.6/library/contextlib.html>`_ to create
+  your own context manager to manage resource setup and teardown
+  operations.
+
+* Context managers can also be written in a class form with the method
+  ``__enter__()`` being called upon entry to the ``with`` statement and
+  ``__exit__()`` being called when the ``with`` statement completes.
+
+Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The code for a chdir context manager using the contextlib decorator
+contextmanager might look like this::
+
+    @contextlib.contextmanager
+    def chdir(path):
+        origin = os.getcwd()                               <1>
+        try:
+            os.chdir(path)                                 <2>
+            yield path                                     <3>
+        finally:
+            os.chdir(origin)                               <4>
+
+ <1> Save our starting point.
+
+ <2> Jump to the target directory, +path+. Any exceptions will break out of
+     the ``try`` body.
+
+ <3> If the ``with`` statement provides an ``as`` variable, ``path`` will
+     be assigned to it.
+
+ <4> Whether an exception is raised or the ``try`` statement completes, the
+     ``finally`` clause will return us to the original directory.
+
+Usage
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Here's how the chdir context manager defined above would be used::
+
+    print os.getcwd()
+    with chdir("/somewhere/else") as cwd:
+        assert(cwd == "/somewhere/else")
+        print os.getcwd()
+    print os.getcwd()
+
+Output
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+And here's the output of the code above::
+
+    /starting/directory
+    /somewhere/else
+    /starting/directory
+
+
+Example 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
+
+Sometimes it makes sense to write a context manager as a class::
+
+    class SomeProtocol:
+        def __init__(self, host, port):
+            self.host, self.port = host, port
+
+        def __enter__(self):
+            self._client = socket()
+            self._client.connect((self.host,
+                                  self.port))
+
+        def __exit__(self, exception, value, traceback):
+            self._client.close()
+
+        def send(self, payload): ...
+
+        def receive(self): ...
+
+    with SomeProtocol(host, port) as protocol:
+        protocol.send(['get', signal])
+        result = protocol.receive()

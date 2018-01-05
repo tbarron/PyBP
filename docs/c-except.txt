@@ -1,0 +1,75 @@
+Exception Handling
+------------------------------------------------------------
+
+While a general exception handler at the top of your program can help
+you control how errors appear to users, at lower levels catch only the
+exceptions you know how to handle at that level.
+
+**Why**:
+
+* The nice thing about exceptions is that you can catch them
+  wherever you have all the information needed to handle the
+  exception effectively.
+
+**How**:
+
+* Just catch the exceptions you know what to do with and leave
+  any others to bubble to the top and be reported to the user in
+  whatever way your general top level exception handler is set up for.
+
+Example 1 -- Different Exceptions at the Same Level
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Avoid "pokemon" exception handling where a single try has to catch (and
+handle) everything.
+
+**Instead of this**::
+
+    try:
+        ...
+    except Exception, e:
+        if this or that:
+            ...
+        else:
+            raise
+
+**Do this**::
+
+    try:
+        ...
+    except this as e:
+        handle thisError
+    except that as e:
+        handle thatError
+
+Example 2 -- Exceptions at Different Levels
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Instead of this**::
+    
+    try:
+        main(sys.argv)
+    except Exception, e:
+        if this or that:
+            # handle all possible exception conditions
+    ...
+    # No exception handling at lower levels
+
+**Do this**::
+
+    try:
+        main(sys.argv)
+    except Exception as err
+        sys.exit(str(err))
+
+    ...
+    def function():
+        try:
+            # do the work of the function
+        except OneKindofError as err:
+            # handle this error
+        except AnotherError as err:
+            # handle this error
+
+Selective exception handling lets you handle the exception in the most
+appropriate place.

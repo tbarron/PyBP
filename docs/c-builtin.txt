@@ -1,0 +1,79 @@
+Python Built-Ins
+------------------------------------------------------------
+
+Be aware of
+`Python's reserved words
+<https://docs.python.org/2/library/functions.html>`_
+and avoid overloading or overwriting them.
+
+**Why**:
+
+* Inadvertent replacement of an internal Python function with
+  your own can cause problems from subtle and hard to find bugs all
+  the way to spectacular and embarrassing failures.
+
+**How**: 
+
+* Learn the list of Python reserved words.
+* Don't use them in unintended ways.
+* Ever.
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Bad**::
+
+    object = myObject()              <1>
+    map = Map()                      <2>
+    zip = 90213                      <3>
+    id = 34                          <4>
+
+
+<1> This example assigns a value to a variable named 'object'. But python
+uses that name to refer to the most primitive, prototypical object in the
+language. With that definition masked, any subsequent class definitions
+will be based on myObject, not on python's prototype object. This will not
+end well.
+
+
+<2> The built-in function map() applies a function to each element of a
+sequence. It can be very useful when we want to rapidly process a sequence
+of items. Masking it with another definition makes it unavailable.
+
+<3> Another built-in function, zip(), can be used to lay sequences side by
+side and stitch the elements together in tuples.
+
+<4> The function id() is helpful in debugging since it provides a unique
+identifier for every object Python knows about. Masking it makes it
+impossible for us to ask Python whether two similar-appearing objects
+really are the same or not.
+
+**Better**::
+
+    obj = myObject()                 # abbreviation
+    object_ = myObject()             # tweak the reserved word
+
+    map_obj = Map()                  # compounding to avoid reserved word
+    map_()                           # tweak
+
+    zip_code = 90213                 # compounding, explicitness
+    postal_code = 90213              # more generic name
+    zip_ = 90213                     # tweak
+
+    pk = 34                          # alternatives
+    sku = 19
+    id_ = 72                         # tweak
+
+This example shows some strategies for avoiding keyword names. 
+
+ * We can use an abbreviation of the keyword (`obj` rather than `object`).
+ * We can add characters to tweak the keyword into something else, for
+   example by adding an underscore (`object_`, `map_`, `zip_`, `id_`.
+ * We can compound a keyword with another word (`map_obj`, `zip_code`)
+ * We can find alternative names (`pk` or `sku` rather than `id`,
+   `postal_code` rather than `zip`)
+
+Example adapted from
+`Python Worst Practices, Daniel Greenfeld
+<http://www.slideshare.net/pydanny/python-worst-practices>`_.
+

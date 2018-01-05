@@ -1,0 +1,38 @@
+Test What Matters
+------------------------------------------------------------
+
+Make sure your tests are testing what matters. It's often easier to write
+do-nothing tests that give the appearance of testing without actually
+verifying the behavior of the target code.
+
+**Why**:
+
+* Tests that don't validate what you expect your code to be doing and flush
+  out bugs are not helpful. The whole point of testing is to help you
+  develop confidence that your code is behaving as expected.
+
+**How**:
+
+* Analyze your code to identify the critical aspects of its behavior and
+  modularize to facilitate testing those. If necessary, rewrite the target
+  code to facilitate testing it.
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Instead of this**::
+
+    def test_app_function():
+        result = app_function()
+        # pass if we got anything
+        assert result != ""
+
+
+**Do this**::
+
+    def test_app_function():
+        result = app_function()
+        # check for expected content
+        assert 'expected string' in result
+        # check that unexpected content is not present
+        assert 'Traceback' not in result

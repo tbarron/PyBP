@@ -1,0 +1,43 @@
+Class Names in Method Docstrings
+------------------------------------------------------------
+
+Consider including the class name in each of its methods' doc strings. This
+makes it easier to navigate as you scroll down through the methods of a
+long class, especially if more than one class is defined in the file.
+
+Of course, you might also consider putting each class in its own file.
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Instead of this**::
+
+    class MyClass(object):
+        def __init__(self, ...):
+            """
+            Initialize the object
+            """
+            <code>
+
+        def spaculate(self, ...):
+            """
+            The spaculation operation
+            """
+            <code>
+
+**Do this**::
+
+    class MyClass(object):
+        def __init__(self, ...):
+            """
+            MyClass: Initialize the object
+            """
+            <code>
+
+        def spaculate(self, ...):
+            """
+            MyClass: The spaculation operation
+            """
+            <code>
+
+

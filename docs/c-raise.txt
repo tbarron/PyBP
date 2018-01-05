@@ -1,0 +1,63 @@
+Bare Raises
+------------------------------------------------------------
+
+By "bare" raise, we mean a ``raise`` with no arguments. This typically
+occurs when an exception has been caught and the decision is to send it on
+up the call stack rather than handling it in the current location.
+
+A bare ``raise`` statement usually indicates you're doing something
+unnecessary. Generally, if you want the exception to propagate up the
+stack, you should not be catching it in the first place.
+
+If you can handle some but not all exceptions at a given level, just catch
+the ones you can handle and don't mention the ones that should bubble up.
+
+**Why**:
+
+* Bare ``raise`` statements are usually not needed.
+
+**How**: 
+
+* Only specify the exceptions the current level knows how to handle. Others
+  should be allowed to bubble up the stack to a higher level handler.
+
+Example
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Instead of this**::
+
+    function load_data_file(path):
+        """
+        Read and parse a data file, returning a structure
+        """
+        try:
+            with open(path, 'r') as input:
+                data = parse(input.read())
+                return data
+
+        except Exception as err:
+            if err.__class__ == ValueError:
+                raise # handled at a higher level
+            if err.__class__ == FileNotFoundError:
+                sys.exit("{} does not exist".format(path))
+            if err.__class__ == PermissionError:
+                sys.exit("Cannot open {} for read".format(path))
+
+
+**Do this**::
+
+    function load_data_file(path):
+        """
+        Read and parse a data file, returning a structure
+        """
+        try:
+            with open(path, 'r') as input:
+                data = parse(input.read())
+                return data
+
+        except FileNotFoundError:
+            sys.exit("{} does not exist".format(path))
+
+        except PermissionError:
+            sys.exit("Cannot open {} for read".format(path))
+
