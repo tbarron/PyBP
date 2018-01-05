@@ -58,7 +58,7 @@ source_suffix = ['.txt', '.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'Python Best Practices: Software that Just Works'
+project = 'Python Best Practices'
 copyright = '2018, Tom Barron'
 author = 'Tom Barron'
 
