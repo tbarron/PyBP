@@ -1,5 +1,3 @@
-.. include:: i_rule.txt
-
 Always Return Something, You Do Anyway
 ------------------------------------------------------------
 
