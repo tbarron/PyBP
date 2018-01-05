@@ -1,10 +1,10 @@
 Resource Management
 ============================================================
 
-.. include:: c_leak.txt
-.. include:: c_context.txt
-.. include:: c_uncaught.txt
-.. include:: c_except.txt
-.. include:: c_methobj.txt
-.. include:: c_builtin.txt
-.. include:: c_raise.txt
+.. include:: c-leak.txt
+.. include:: c-context.txt
+.. include:: c-uncaught.txt
+.. include:: c-except.txt
+.. include:: c-methobj.txt
+.. include:: c-builtin.txt
+.. include:: c-raise.txt

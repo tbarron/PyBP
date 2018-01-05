@@ -1,10 +1,12 @@
 General Practices
 ===========================
 
-.. include:: c_python3.txt
-.. include:: c_idiomatic.txt
-.. include:: c_tdd.txt
-.. include:: c_dry.txt
-.. include:: c_yagni.txt
-.. include:: c_bugtest.txt
-.. include:: c_change.txt
+.. include:: c-python3.txt
+.. include:: c-idiomatic.txt
+.. include:: c-convention.txt
+.. include:: c-internal.txt
+.. include:: c-tdd.txt
+.. include:: c-dry.txt
+.. include:: c-yagni.txt
+.. include:: c-bugtest.txt
+.. include:: c-change.txt

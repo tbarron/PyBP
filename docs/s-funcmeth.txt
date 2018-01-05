@@ -1,9 +1,9 @@
 Functions and Methods
 ============================================================
 
-.. include:: c_bricks.txt
-.. include:: c_foundation.txt
-.. include:: c_return.txt
-.. include:: c_cascade.txt
-.. include:: c_truegood.txt
-.. include:: c_complete.txt
+.. include:: c-bricks.txt
+.. include:: c-foundation.txt
+.. include:: c-return.txt
+.. include:: c-cascade.txt
+.. include:: c-truegood.txt
+.. include:: c-complete.txt

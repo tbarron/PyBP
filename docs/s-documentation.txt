@@ -1,11 +1,9 @@
 Documentation (Baked In)
 ============================================================
 
-.. include:: c_module.txt
-.. include:: c_function.txt
-.. include:: c_convention.txt
-.. include:: c_internal.txt
-.. include:: c_class.txt
-.. include:: c_matters.txt
-.. include:: c_underscore.txt
 
+.. include:: c-module.txt
+.. include:: c-function.txt
+.. include:: c-class.txt
+.. include:: c-matters.txt
+.. include:: c-underscore.txt
