@@ -2,24 +2,24 @@ Preface
 -----------------------------------------------------------------
 
 These are some best practices I've stolen from colleagues and formulated
-for myself over the course of a decade of learning and using Python. I hope
-the fact that it's mildly opinionated is justified by the effectiveness of
-the practices in making code easier to maintain and change.
-
-As in most areas of life, common sense is required and there are no
-guarantees that every practice will apply in every situation. One has to
-use good judgement. Of course, good judgement comes with experience and a
-lot of that comes from poor judgement.
-
+for myself over the course of a decade of learning and using Python. Some
+of them are opinionated. I hope I have not oversold them and that their
+effectiveness in making code easier to maintain and change will compensate
+for their other flaws.
 
 Standard Disclaimers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 These ideas are rules of thumb that work pretty well for me most of the
-time. They will not be applicable in every case. In reading and applying
-these ideas, I encourage you to ask yourself, "In this particular case, is
-there a good reason to NOT use this practice/technique/pattern?" If the
-answer is "yes," then don’t use the pattern, rather do what makes sense.
+time. They will not be applicable in every case. As in most areas of life,
+common sense is required and one has to use good judgement. Of course, good
+judgement comes with experience and a lot of that comes from poor
+judgement.
+
+In reading and applying these ideas, I encourage you to ask yourself, "In
+this particular case, is there a good reason to NOT use this
+practice/technique/pattern?" Having answered the question to your own
+satisfaction, do what makes the most sense to you.
 
 - Your mileage may vary.
 
@@ -30,7 +30,7 @@ answer is "yes," then don’t use the pattern, rather do what makes sense.
 
 - Unless we get a better offer.
 
-- Unless circumstance intervene.
+- Until circumstance intervene.
 
 - Every statement of intention is a current plan that may or may not be
   realized.
@@ -40,6 +40,8 @@ answer is "yes," then don’t use the pattern, rather do what makes sense.
 - If present trends continue.
 
 - Past results are no guarantee of future performance.
+
+- No plan survives contact with reality.
 
 - This is not an exhaustive list.
 
