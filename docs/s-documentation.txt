@@ -1,6 +1,8 @@
 Documentation (Baked In)
 ============================================================
 
+With module and function docstrings, Python provides a simple mechanism for
+baking documentation right into the code.
 
 .. include:: c-module.txt
 .. include:: c-function.txt
