@@ -16,10 +16,9 @@ test suite.
 
 **Why**:
 
-* Capturing knowledge about past bugs in tests allows us to
-  code with confidence, knowing that any regressions will be exposed
-  the next time we run our tests. (Well, "*know*" may be a little
-  strong. But you get the idea.)
+* Capturing knowledge about past bugs in tests allows us to code with
+  confidence, trusting that any regressions will be exposed the next time
+  we run our tests.
 
 **How**:
 
@@ -28,3 +27,6 @@ test suite.
   more bugs crop up in the process of constructing the new test, write a
   test for each one.
 
+|
+|
+|

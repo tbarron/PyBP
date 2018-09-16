@@ -1,7 +1,7 @@
 Object Completeness
 ------------------------------------------------------------
 
-When the constructor finishes, the object should be complete and well-formed.
+When its constructor returns, an object should be complete and well-formed.
 
 **Why**:
 
@@ -16,10 +16,8 @@ When the constructor finishes, the object should be complete and well-formed.
 * Write a test for each object constructor that verifies that all
   attributes of new objects have a valid, meaningful value.
 
-* Then, when writing new constructors, make sure that when ``__init()__``
-  returns, all the attributes of the object have been set to a valid value.
-  Of course, if you forget this step, the failing test will remind you.
-
+* If you forget to provide a valid value for an object attribute, the
+  failing test will serve as a reminder.
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,7 +36,7 @@ adapted from `Python Best Practice Patterns by Vladimir Keleshev
     ...
 
     import Human
-    p = Human.Person()                                    <1>
+    p = Human()                                          <1>
     p.name = "George"
     p.age = 75
     p.married = True
@@ -57,6 +55,14 @@ adapted from `Python Best Practice Patterns by Vladimir Keleshev
     ...
 
     import Human
-    p = Human.Person(name="George", age=75, married=True) <2>
+    p = Human(name="George", age=75, married=True) <2>
 
  <2> When the constructor completes, all of the members of p are set.
+
+Also, note that in the second example, attempting to instantiate a person
+without a name, age, or marital status will fail because the constructor
+requires all three arguments.
+
+|
+|
+|

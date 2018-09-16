@@ -18,7 +18,7 @@ points by writing code that is intentionally difficult to understand.
 
 **How**:
 
-* Learn what idiomatic Python looks like, then use that knowledge. A great
+* Learn what idiomatic Python looks like and use that knowledge. A great
   place to start is `Writing Idiomatic Python
   <https://jeffknupp.com/writing-idiomatic-python-ebook/>`_ by Jeff Knupp.
 
@@ -35,3 +35,7 @@ points by writing code that is intentionally difficult to understand.
 
     meth = getattr(myclass, get_method_name())
     result = meth(arg1, arg2)
+
+|
+|
+|

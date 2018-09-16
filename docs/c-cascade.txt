@@ -24,7 +24,8 @@ If an object method has nothing better to return, make it return
 
 **How**:
 
-* Just ``return self`` at the end of each method.
+* Just ``return self`` at the end of each method with nothing better to
+  return.
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,4 +73,6 @@ adapted from `Python Best Practice Patterns by Vladimir Keleshev
  <3> Methods return self.
  <4> Calls can be daisy chained.
 
-
+|
+|
+|

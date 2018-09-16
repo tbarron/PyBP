@@ -65,3 +65,7 @@ Example
  object x.
  <2> Runs the __call__() method, calling the subordinate object
  methods.
+
+|
+|
+|

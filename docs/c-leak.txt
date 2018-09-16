@@ -30,11 +30,15 @@ Example
     f.close()                   <2>
 
  <1> Imagine 100 lines of output here.
- <2> Wouldn't it be easy to forget this close?
+ <2> It would be easy to forget this close.
 
 **Do this**::
 
     with open(filename, 'w') as f:
         f.write(data)           <3>
 
- <3> The close is automatic. You don't have to remember to code it.
+ <3> The close is automatic. You do not have to remember to code it.
+
+|
+|
+|

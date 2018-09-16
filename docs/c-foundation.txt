@@ -94,7 +94,13 @@ Examples
 
     def frobnicate_the_frogwhistle():
         ... code ...
-        # report a percentage of frobnication (0 to 100)
-        frobnication = 100.0 * float(frobin) / float(frogwhis)
-        return frobnication
+        if something_went_wrong:
+            raise AppException("The frogwhistle exploded!")  # explain failure
+        elif something_else_went_wrong:
+            raise AppException("Too many frogwhistles")      # explain
 
+        return True                                          # indicate success
+
+|
+|
+|

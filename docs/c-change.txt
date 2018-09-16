@@ -18,8 +18,8 @@ happens.
 
 **How**:
 
-  * In a 2014 anti-Agile_ [#thomas]_ screed on his blog_, Dave Thomas
-    outlines the following process model:
+  * In his 2014 anti-Agile_ [#thomas]_ screed, Dave Thomas outlines the
+    following process model:
 
     1. Find out where you are
     2. Take a small step towards your goal
@@ -35,3 +35,6 @@ future change easier."
 .. _blog: http://pragdave.me/
 .. [#thomas] `Dave Thomas: "Time to Kill Agile <http://pragdave.me/blog/2014/03/04/time-to-kill-agile>`_
 
+|
+|
+|

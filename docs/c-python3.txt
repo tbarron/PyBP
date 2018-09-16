@@ -28,7 +28,7 @@ Python 2.x.
 * When you do have to write Python 2 for whatever reason, make your code as
   friendly as possible to the version 3 interpreter. For example, use
   parentheses on 'print' statements, even though version 2 doesn't require
-  it.
+  them.
 
 * The `__future__ <https://docs.python.org/3.6/library/__future__.html>`_
   module (part of Python itself) and future_ module (no underscores, a third
@@ -41,3 +41,7 @@ Python 2.x.
 .. _2to3: https://docs.python.org/3.6/library/2to3.html
 .. _differences: https://docs.python.org/3/whatsnew/3.0.html
 .. _future: http://python-future.org
+
+|
+|
+|

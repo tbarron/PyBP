@@ -33,7 +33,7 @@ catalog, then when you want to use one of your single use strings a second
 time, you'll have to notice that this is the second time of using this
 string, add it to the catalog, and update the original use to refer to the
 catalog instead. It's much easier to just put all your strings in the
-catalog from the beginning. (This is an example of a useful internal
+catalog from the beginning. (This could be an example of a useful internal
 convention.)
 
 **Why**:
@@ -46,9 +46,9 @@ convention.)
 
 **How**:
 
-* Write each primitive function/method to do one thing.
-  Upstream functions will call these primitives. Keep static messages
-  in a message catalog and use them from there.
+* Write each primitive function/method to do one thing. Higher level
+  functions will call these primitives. Keep static messages in a message
+  catalog and use them from there.
 
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,7 +74,7 @@ Example
     conditional_unlink('junk')
 
 
-**Or even better** (the unlink function is only mentioned once)::
+**Or even better** (the unlink function is called in only one place)::
 
     def conditional_unlink(filename):
         if os.path.exists(filename):
@@ -82,3 +82,7 @@ Example
 
     for filename in ['abcfile', 'foofile', 'junk']:
         conditional_unlink(filename)
+
+|
+|
+|

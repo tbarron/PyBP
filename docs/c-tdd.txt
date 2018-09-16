@@ -14,18 +14,18 @@ regularly (like every time the code changes).
 
 **How**:
 
-* Ideally, we would write our test functions first and use the test
-  functions to specify the precise behavior expected of the new application
+* Ideally, we would write test functions first and use the test functions
+  to specify the precise behavior expected of the new application
   functions. Then, as we write the application functions, running the tests
   will assess progress toward completing the application functions. In this
   theoretical scenario, once all the tests pass, the application is done.
 
-* In practice, my experience has been that it's about as hard to write
-  correct test code as it is to write correct application code. So I
-  usually wind up developing test and application functions together.
-  Working on the application functions shows me where test
-  functions have been messed up and have to be corrected before the related 
-  application function can be tested properly.
+* In practice, it's often about as hard to write correct test code as it is
+  to write correct application code. The upshot is that often test and
+  application functions wind up being developed in parallel. Working on the
+  application functions shows where test functions have been messed up and
+  have to be corrected before the related application function can be
+  tested properly.
 
 The documentation for each test runner describes how it discovers
 tests and how it expects tests to be set up. Most of them scan project
@@ -105,3 +105,7 @@ Example
 .. _py.test: http://pytest.org/latest/
 .. _nosetests: https://nose.readthedocs.org/en/latest/
 .. _green: https://pypi.python.org/pypi/green
+
+|
+|
+|

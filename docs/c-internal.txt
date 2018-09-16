@@ -3,7 +3,7 @@ Define Internal Conventions
 
 To keep your program sane, you need to make rules for yourself and
 apply them consistently. This collection of best practices is a set of
-suggested rules for creating sane software that works, however, each
+suggested rules for creating sane software that works. However, each
 program needs to have its own internal consistency and integrity,
 especially as it grows.
 
@@ -17,4 +17,8 @@ especially as it grows.
 **How**:
 
 - Make the internal conventions for each program explicit by writing them
-  as comments in the code itself.
+  as comments in the code itself or in the project's README.
+
+|
+|
+|

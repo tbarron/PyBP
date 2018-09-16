@@ -2,12 +2,13 @@ You Aren't Gonna Need It
 ------------------------------------------------------------
 
 When considering how to solve a problem, ask yourself, "What is the
-simplest thing I could do that might possibly work?" Then do that, at
-least as a first approximation to the solution. You *may* have to
-revisit it and improve it, but you may not.
+simplest thing I could do that might possibly work?" Whatever the answer
+is, try it, at least as a first approximation to the solution. You *may*
+have to revisit and improve it, but you may not.
 
-Don't add stuff you may need in the future. When you need it, add it,
-but not before. If you wait, it may turn out that you never need it.
+Don't add stuff you might need in the future. When you need it, add it,
+but not before. By waiting, you will often avoid working on code that would
+never actually get used.
 
 **Why**:
 
@@ -22,3 +23,7 @@ but not before. If you wait, it may turn out that you never need it.
 
 
 `Ron Jeffries, co-founder of Extreme Programming on YAGNI <https://ronjeffries.com/xprog/articles/practices/pracnotneed/>`_
+
+|
+|
+|

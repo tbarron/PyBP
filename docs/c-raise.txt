@@ -61,3 +61,8 @@ Example
         except PermissionError:
             sys.exit("Cannot open {} for read".format(path))
 
+    # ValueErrors will bubble up to be handled at a higher level
+
+|
+|
+|

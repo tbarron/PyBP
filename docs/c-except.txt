@@ -8,7 +8,7 @@ exceptions you know how to handle at that level.
 **Why**:
 
 * The nice thing about exceptions is that you can catch them
-  wherever you have all the information needed to handle the
+  where you have all the information needed to handle the
   exception effectively.
 
 **How**:
@@ -73,3 +73,7 @@ Example 2 -- Exceptions at Different Levels
 
 Selective exception handling lets you handle the exception in the most
 appropriate place.
+
+|
+|
+|

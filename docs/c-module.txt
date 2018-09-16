@@ -14,6 +14,11 @@ purpose it serves in the overall context of the program.
 * Put a pair of triple quotes at the top of the file
   with the docstring between them
 
+* Double quotes and single quotes both work as far as Python is concerned.
+  Some editors may prefer one or the other. For example, emacs typically
+  likes double quotes better for docstrings.
+
+
 Example
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -48,3 +53,7 @@ module can be worse than nothing because it is misleading.
  <1> Triple quotes delimit the docstring.
 
 The description becomes part of the program documentation.
+
+|
+|
+|

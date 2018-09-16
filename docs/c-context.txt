@@ -25,6 +25,8 @@ Example 1
 The code for a chdir context manager using the contextlib decorator
 contextmanager might look like this::
 
+    import contextlib
+
     @contextlib.contextmanager
     def chdir(path):
         origin = os.getcwd()                               <1>
@@ -93,3 +95,7 @@ Sometimes it makes sense to write a context manager as a class::
     with SomeProtocol(host, port) as protocol:
         protocol.send(['get', signal])
         result = protocol.receive()
+
+|
+|
+|

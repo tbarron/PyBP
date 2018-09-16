@@ -5,13 +5,13 @@ Some interfaces use zero to indicate success and a non-zero value to
 indicate failure. In Python, on the other hand, True typically means
 success while False means failure.
 
-If you have to deal with a crazy interface (like the Unix shell, where 0
+If you have to deal with a confused interface (like the Unix shell, where 0
 indicates success and a non-zero value indicates failure), wrap it in such
 a way that it makes pythonic sense to the rest of your code.
 
 **Why**:
 
-* Allowing the craziness into your code will eventually let it
+* Allowing the confusion into your code will eventually let it
   get everywhere. Nobody wants that.
 
 **How**:
@@ -24,7 +24,7 @@ Example [#greenfeld]_
 
 **Not so good**::
 
-    def crazy_api(*args):
+    def inverted_api(*args):
         do_the_thing()
         if it_worked():
             return 0
@@ -33,9 +33,13 @@ Example [#greenfeld]_
 
 **Preferable**::
 
-    def wrap_craziness(*args):
-        rc = crazy_api(*args)
+    def wrap_confusion(*args):
+        rc = inverted_api(*args)
         return not bool(rc)
 
 .. [#greenfeld] adapted from `Python Worst Practices, Daniel Greenfeld
    <http://www.slideshare.net/pydanny/python-worst-practices>`_
+
+|
+|
+|

@@ -40,8 +40,8 @@ Example
 
 Using ``pass`` as a placeholder is a common Python maneuver since Python
 requires at least one indented executable line following each line
-that ends with a colon. That's fine for loops and conditionals that we
-want to not do anything. However, a function that ends with ``pass``
+that ends with a colon. That's fine for loops and conditionals when the
+body should be empty. However, a function that ends with ``pass``
 does the same thing as one that ends with ``return None``. For the
 reasons outlined above, I think ``return None`` is better.
 
@@ -52,3 +52,7 @@ reasons outlined above, I think ``return None`` is better.
         This is the docstring
         """
         return None
+
+|
+|
+|

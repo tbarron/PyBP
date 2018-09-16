@@ -49,3 +49,7 @@ adapted from `Python Best Practice Patterns by Vladimir Keleshev
     ...
     if self.is_visible():
         ...
+
+|
+|
+|
