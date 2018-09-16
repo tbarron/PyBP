@@ -3,9 +3,8 @@ Preface
 
 These are some best practices I've stolen from colleagues and formulated
 for myself over the course of a decade of learning and using Python. Some
-of them are opinionated. I hope I have not oversold them and that their
-effectiveness in making code easier to maintain and change will compensate
-for their other flaws.
+of them are opinionated. I hope you will find them as useful and effective
+as I have.
 
 Standard Disclaimers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

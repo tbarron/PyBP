@@ -12,6 +12,11 @@ The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
 ## [0.0.2] / 2018-09-16 / Trouble-shooting classic theme on readthedocs.io
+### Changes
+ * Wordsmithing in s-preface.txt
+
+### Deletions
+ * Removed the html_sidebars dictionary from conf.py
 
 ## [0.0.1] / 2018-09-16 / Implementing keep-a-changelog and semantic versioning
 ### Additions
