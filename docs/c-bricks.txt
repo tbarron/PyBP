@@ -1,21 +1,20 @@
 Make Bricks, Not Monoliths
 ------------------------------------------------------------
 
-Design your functions and methods as many tiny bricks rather than a few
-huge monoliths. Encapsulate non-obvious code in well-named functions so
-it's clear what each function does.
+Design functions and methods as tiny bricks rather than huge monoliths.
+Encapsulate non-obvious code in well-named functions so the reader knows at
+a glance what each function does.
 
 **Why**:
 
-* Small chunks of well-encapsulated code can be put together in lots
-  of different ways to build up more significant functionality. On the
-  other hand, it's difficult to reuse 500-line special-purpose
-  routines effectively.
+* Small chunks of well-encapsulated code can be put together in lots of
+  different ways to build up more significant functionality. However, it's
+  difficult to reuse 500-line special-purpose routines effectively.
 
 * Small functions are easier to understand and test. Well-named short
   routines whose purpose and function are obvious from the name and code
   often communicate more effectively than the same code embedded in a
-  larger function, even commented.
+  larger function, even if the larger function is well-commented.
 
 **How**:
 
