@@ -1,12 +1,15 @@
 Gemfile.lock
-DODO
+DODO*
+*.private
+links.py
 _site
+.cache
 *.html
 .env
 *~
 PyBP.fo
 PyBP.xml
-docs/__pycache__
+__pycache__
 docs/_build
 pages/*
 venv
