@@ -3,37 +3,36 @@ Test Driven Development
 
 Write one or more test functions for each program function. Ideally, write
 the tests before writing the program function. Use a test runner like
-py.test_, nosetests_, or green_ to discover and run your test suite
-regularly (like, every time your code changes).
+py.test_, nosetests_, or green_ to discover and run the test suite
+regularly (like every time the code changes).
 
 **Why**:
 
-* A comprehensive set of unit tests allows us to make changes with
-  confidence. If we break anything accidentally, our test suite will let us
-  know.
+* A comprehensive set of unit tests allows for making changes with
+  confidence. If a change breaks anything accidentally, the test suite will
+  give an alarm.
 
 **How**:
 
-* Ideally, we would write our test functions first and use our test
-  functions to specify the precise behavior expected of the application
-  functions. Then, as we write the application functions, we can run the
-  tests to assess progress toward completing the application functions. In
-  this theoretical scenario, once all the tests pass, the application is
-  done.
+* Ideally, we would write our test functions first and use the test
+  functions to specify the precise behavior expected of the new application
+  functions. Then, as we write the application functions, running the tests
+  will assess progress toward completing the application functions. In this
+  theoretical scenario, once all the tests pass, the application is done.
 
 * In practice, my experience has been that it's about as hard to write
   correct test code as it is to write correct application code. So I
-  usually wind up developing my test and application functions together.
-  Working on the application functions shows me where I have messed up test
-  functions, which have to be corrected before I can the get related
-  application function right.
+  usually wind up developing test and application functions together.
+  Working on the application functions shows me where test
+  functions have been messed up and have to be corrected before the related 
+  application function can be tested properly.
 
-Read the documentation for your test runner to understand how it discovers
+The documentation for each test runner describes how it discovers
 tests and how it expects tests to be set up. Most of them scan project
-files and directories whose names contain the string ``test``, run class
-methods with names that include the string ``test``. One reason I prefer
-py.test is that it will run stand-alone functions so I don't have to create
-classes to contain my tests.
+files and directories whose names contain the string ``test`` and run class
+methods with names that include the string ``test``. One reason for preferring
+py.test is that it will run stand-alone functions so container classes are
+not required.
 
 
 Example
