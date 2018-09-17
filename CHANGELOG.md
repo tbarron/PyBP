@@ -11,7 +11,9 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+### Changes
  * Change the date of Python 2.7's end of support, per pyclock.org
+ * Wordsmithing: c-convention.txt, c-idiomatic.txt, c-uncaught.txt
  * Make the sidebar sticky and collapsible
 ## [0.0.2] / 2018-09-16 / Trouble-shooting classic theme on readthedocs.io
 ### Additions

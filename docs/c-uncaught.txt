@@ -1,7 +1,8 @@
 Uncaught Exception Handler
 ------------------------------------------------------------
 
-Provide a general exception handler at the top level of your program
+Consider providing a general exception handler at the top level of your
+program
 
 **Why**:
 
@@ -50,20 +51,22 @@ Example 2
         main(sys.argv)
 
 
-Whichever approach you prefer, pick one or the other. In most cases using
-both would probably be overkill.
+Of cousre, if you *don't* provide a top level exception handler, you'll
+wind up using the one Python provides by default, which is fine for many
+purposes. On the other hand, most users think tracebacks are kind of ugly.
+
+For a given project, pick an approach and stick with it. Mixing and
+matching would probably be overkill and would definitely be confusing.
 
 Of course, this allows us a lot of flexibility -- ``exc_handler()`` could send
 a short one line message to the user while saving the complete traceback in
 a log file for later reference, which might be a way of doing both. So you
 might have your cake and eat it, too.
 
-.. NOTE:: This entry is not intended to suggest avoiding ``try ... except``
-   blocks at lower levels of your program. The ``try ... except`` mechanism
-   is the standard Pythonic way of detecting and handling exceptional
-   conditions as your code runs. Rather, the intent is to encourage you to
-   put an exception catcher at the top level of your program so you have
-   the opportunity to handle unexpected exceptions.
+.. NOTE:: The point of this is NOT to put a single massive handler at the
+   top of the program and attempt to handle all exceptions there. ``try ...
+   except`` blocks belong at strategic spots in the code where the
+   information for handling an exception is available.
 
 |
 |

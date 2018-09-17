@@ -1,11 +1,10 @@
 Convention Over Configuration
 ------------------------------------------------------------
 
-You *can* set up a Python project any way you want. You may even be
-able to tweak environment variables and write infrastructure support
-code until something actually works. But it will be a lot easier if
-you learn and use the conventions of the Python infrastructure that's
-already defined.
+You *can* set up a Python project any way you want. You may even be able to
+tweak environment variables and write infrastructure support code until
+something actually works. But it will be a lot easier if you learn and use
+the conventions of the Python infrastructure that is already defined.
 
 **Why**:
 

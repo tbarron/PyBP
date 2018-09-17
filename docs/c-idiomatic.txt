@@ -13,17 +13,17 @@ points by writing code that is intentionally difficult to understand.
 **Why**:
 
 * Other programmers (including you two years from now, when revisiting the
-  code you wrote yesterday) will find it easier to understand code written
+  code written yesterday) will find it easier to understand code written
   in terms of conventional, well-understood Python patterns.
 
 **How**:
 
-* Learn what idiomatic Python looks like and use that knowledge. A great
+* Learn what idiomatic Python looks like and apply that knowledge. A great
   place to start is `Writing Idiomatic Python
   <https://jeffknupp.com/writing-idiomatic-python-ebook/>`_ by Jeff Knupp.
 
-* If you find yourself struggling to get an awkward, hard-to-understand
-  line of code to work, suspect that there's a cleaner, simpler, more
+* If you find yourself struggling with an awkward, confusing, and wordy
+  block of code, you should suspect that there's a cleaner, simpler, more
   succinct way to do it. For example, as a beginning Pythonista, I often
   resorted to using eval() to parse top level expressions to achieve
   introspection when I didn't know a more direct way::
