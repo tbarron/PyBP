@@ -6,11 +6,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Each release header has the following format:
 
-    [VERSION] / release date / title
+    [VERSION] / release date / title (branch, TAG)
 
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+## [0.0.3] / 2018-09-17 / Detail tweaks (details, DT)
 ### Changes
  * Change the date of Python 2.7's end of support, per pyclock.org
  * Wordsmithing: c-convention.txt, c-idiomatic.txt, c-uncaught.txt
