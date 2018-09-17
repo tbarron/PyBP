@@ -15,6 +15,9 @@ short marker that begins each of the related commit messages.
  * Change the date of Python 2.7's end of support, per pyclock.org
  * Wordsmithing: c-convention.txt, c-idiomatic.txt, c-uncaught.txt
  * Make the sidebar sticky and collapsible
+### Deletions
+ * Eliminate "Example" and lower items in the Table of Contents
+
 ## [0.0.2] / 2018-09-16 / Trouble-shooting classic theme on readthedocs.io
 ### Additions
  * Add untracked files to .gitignore

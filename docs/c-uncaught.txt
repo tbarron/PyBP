@@ -14,7 +14,8 @@ program
 * There are a couple of ways to do this. The first is by wrapping the
   call to main(), or the contents of main() in a ``try ... except`` block.
 
-Example 1
+**Example 1**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     def main(args):
@@ -34,7 +35,10 @@ Another option, perhaps simpler and cleaner, is to use `sys.excepthook
 <https://docs.python.org/2/library/sys.html>`_ to override Python's default
 handling of uncaught exceptions:
 
-Example 2
+|
+
+**Example 2**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     import sys

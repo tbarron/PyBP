@@ -27,13 +27,14 @@ If an object method has nothing better to return, make it return
 * Just ``return self`` at the end of each method with nothing better to
   return.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 adapted from `Python Best Practice Patterns by Vladimir Keleshev
 <http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
 
-**Instead of this**::
+*Instead of this*::
 
     class Reactor:
         def release_water(self):
@@ -54,7 +55,7 @@ adapted from `Python Best Practice Patterns by Vladimir Keleshev
      omitted).
  <2> Each method has to be called through the object.
 
-**Do this**::
+*Do this*::
 
     class Reactor:
         def release_water(self):

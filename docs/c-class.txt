@@ -7,10 +7,11 @@ long class, especially if more than one class is defined in the file.
 
 Of course, you might also consider putting each class in its own file.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
 
     class MyClass(object):
         def __init__(self, ...):
@@ -25,7 +26,7 @@ Example
             """
             <code>
 
-**Do this**::
+*Do this*::
 
     class MyClass(object):
         def __init__(self, ...):

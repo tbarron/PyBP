@@ -19,10 +19,11 @@ purpose it serves in the overall context of the program.
   likes double quotes better for docstrings.
 
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**No docstring -- Poor**::
+*No docstring -- Poor*::
 
     #!/usr/bin/env python
     class Foobar(...):
@@ -30,7 +31,7 @@ Example
 
 No description of the module appears in the pydoc output.
 
-**Obvious docstring -- Better than nothing (maybe)**::
+*Obvious docstring -- Better than nothing (maybe)*::
 
     """                                           <1>
     This module describes module docstrings
@@ -43,7 +44,7 @@ obvious docstring that doesn't answer questions about the purpose of the
 module is not helpful. One that gets out of synch with the content of the
 module can be worse than nothing because it is misleading.
 
-**Places this module in the big picture -- Better**::
+*Places this module in the big picture -- Better*::
 
     """                                           <1>
     This discussion of module docstrings in Python is one of a group of

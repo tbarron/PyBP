@@ -17,10 +17,11 @@ using a method object.
   ``__call__`` method can then use other object methods and attributes to
   compose the larger overall task.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
 
     def send_task(self, task, job, obligation):
         ...
@@ -31,7 +32,7 @@ Example
         executed = frobnicate(...)
         100 more lines
 
-**Do this**::
+*Do this*::
 
     class TaskSender:
         def __init__(self, task, job, obligation):
@@ -56,7 +57,7 @@ Example
         def execute():
             # do something
 
-**Usage**::
+*Usage*::
 
     x = TaskSender(12345, 'series15', 'background')   <1>
     x()                                               <2>

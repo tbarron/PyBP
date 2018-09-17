@@ -18,10 +18,12 @@ and avoid overloading or overwriting them.
 * Don't use them in unintended ways.
 * Ever.
 
-Example
+**Example**:: (adapted from `Python Worst Practices, Daniel Greenfeld
+<http://www.slideshare.net/pydanny/python-worst-practices>`_)
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Bad**::
+*Bad*::
 
     object = myObject()              <1>
     map = Map()                      <2>
@@ -48,7 +50,7 @@ identifier for every object Python knows about. Masking it makes it
 impossible for us to ask Python whether two similar-appearing objects
 really are the same or not.
 
-**Better**::
+*Better*::
 
     obj = myObject()                 # abbreviation
     object_ = myObject()             # tweak the reserved word

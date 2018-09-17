@@ -21,26 +21,25 @@ a glance what each function does.
 * Limit each function/method to a single task, all at the same
   level of abstraction.
 
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-adapted from `Python Best Practice Patterns by Vladimir Keleshev
-<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
+**Example**:: (adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_)
 
-**Not so good**::
+~~~~~~~
+
+*Not so good*::
 
     def do_everything():
         ... 1000 lines in a single function ...
 
 
-**Not very obvious**::
+*Not very obvious*::
 
     ...
     if self.flags & 0b1000:  # Am I visible?
         ...
 
-
-**Better**::
+*Better*::
 
     ...
     def is_visible(self):

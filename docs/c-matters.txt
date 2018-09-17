@@ -17,10 +17,11 @@ verifying the behavior of the target code.
   modularize to facilitate testing those. If necessary, rewrite the target
   code to facilitate testing it.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
 
     def test_app_function():
         result = app_function()
@@ -28,7 +29,7 @@ Example
         assert result != ""
 
 
-**Do this**::
+*Do this*::
 
     def test_app_function():
         result = app_function()

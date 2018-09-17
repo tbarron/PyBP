@@ -35,8 +35,9 @@ py.test is that it will run stand-alone functions so container classes are
 not required.
 
 
-Example
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. rubric:: Example
+
+~~~~~~~~~~~~~~~~~~~
 
 **dates.py**::
 

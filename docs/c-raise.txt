@@ -21,10 +21,11 @@ the ones you can handle and don't mention the ones that should bubble up.
 * Only specify the exceptions the current level knows how to handle. Others
   should be allowed to bubble up the stack to a higher level handler.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
 
     function load_data_file(path):
         """
@@ -44,7 +45,7 @@ Example
                 sys.exit("Cannot open {} for read".format(path))
 
 
-**Do this**::
+*Do this*::
 
     function load_data_file(path):
         """

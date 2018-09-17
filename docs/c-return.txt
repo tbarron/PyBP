@@ -26,10 +26,11 @@ end of every function and method you write.
   Another possibility is to create a function template and insert it in
   your editor when you want to start a new function.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
 
     def function_template(args):
         """
@@ -45,7 +46,7 @@ body should be empty. However, a function that ends with ``pass``
 does the same thing as one that ends with ``return None``. For the
 reasons outlined above, I think ``return None`` is better.
 
-**Do this**::
+*Do this*::
 
     def function_template(args):
         """

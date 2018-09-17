@@ -19,7 +19,8 @@ Compose your own context managers to control resources.
   ``__enter__()`` being called upon entry to the ``with`` statement and
   ``__exit__()`` being called when the ``with`` statement completes.
 
-Example 1
+**Example 1**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The code for a chdir context manager using the contextlib decorator
@@ -47,8 +48,7 @@ contextmanager might look like this::
  <4> Whether an exception is raised or the ``try`` statement completes, the
      ``finally`` clause will return us to the original directory.
 
-Usage
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*Usage*:
 
 Here's how the chdir context manager defined above would be used::
 
@@ -58,8 +58,7 @@ Here's how the chdir context manager defined above would be used::
         print os.getcwd()
     print os.getcwd()
 
-Output
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*Output*:
 
 And here's the output of the code above::
 
@@ -68,11 +67,8 @@ And here's the output of the code above::
     /starting/directory
 
 
-Example 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-adapted from `Python Best Practice Patterns by Vladimir Keleshev
-<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
+**Example 2**: (adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_)
 
 Sometimes it makes sense to write a context manager as a class::
 

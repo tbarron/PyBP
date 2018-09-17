@@ -72,16 +72,17 @@ while another set does the opposite).
 Insist on your low level routines returning a clear indication of success
 or failure. No news is not good news. No news is no news.
 
-Examples
+**Examples**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Not so good**::
+*Not so good*::
 
     def frobnicate_the_frogwhistle():
         ... code ...
         # no return statement
     
-**Better**::
+*Better*::
 
     def frobnicate_the_frogwhistle():
         ... code ...
@@ -90,7 +91,7 @@ Examples
         else
             return True
         
-**Perhaps even better (more explicit)**::
+*Perhaps even better (more explicit)*::
 
     def frobnicate_the_frogwhistle():
         ... code ...

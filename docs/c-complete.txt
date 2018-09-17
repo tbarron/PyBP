@@ -19,13 +19,12 @@ When its constructor returns, an object should be complete and well-formed.
 * If you forget to provide a valid value for an object attribute, the
   failing test will serve as a reminder.
 
-Example
+**Example**: (adapted from `Python Best Practice Patterns by Vladimir Keleshev
+<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_)
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-adapted from `Python Best Practice Patterns by Vladimir Keleshev
-<http://stevenloria.com/python-best-practice-patterns-by-vladimir-keleshev-notes>`_
-
-**Instead of this**::
+*Instead of this*::
 
     class Human(object):
         def __init__(self):
@@ -44,7 +43,7 @@ adapted from `Python Best Practice Patterns by Vladimir Keleshev
  <1> The constructor has finished at this point, but the person has no
  name, age, or marital status.
 
-**Do this**::
+*Do this*::
 
     class Human(object):
         def __init__(self, name, age, married):

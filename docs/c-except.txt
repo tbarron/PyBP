@@ -1,4 +1,4 @@
-Exception Handling
+Targeted Exception Handling
 ------------------------------------------------------------
 
 While a general exception handler at the top of your program can help
@@ -17,13 +17,14 @@ exceptions you know how to handle at that level.
   any others to bubble to the top and be reported to the user in
   whatever way your general top level exception handler is set up for.
 
-Example 1 -- Different Exceptions at the Same Level
+**Example 1 -- Different Exceptions at the Same Level**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Avoid "pokemon" exception handling where a single try has to catch (and
 handle) everything.
 
-**Instead of this**::
+*Instead of this*::
 
     try:
         ...
@@ -33,7 +34,7 @@ handle) everything.
         else:
             raise
 
-**Do this**::
+*Do this*::
 
     try:
         ...
@@ -42,10 +43,13 @@ handle) everything.
     except that as e:
         handle thatError
 
-Example 2 -- Exceptions at Different Levels
+|
+
+**Example 2 -- Exceptions at Different Levels**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
     
     try:
         main(sys.argv)
@@ -55,7 +59,7 @@ Example 2 -- Exceptions at Different Levels
     ...
     # No exception handling at lower levels
 
-**Do this**::
+*Do this*::
 
     try:
         main(sys.argv)

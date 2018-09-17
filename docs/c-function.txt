@@ -18,10 +18,11 @@ purpose it serves in the overall context of the program.
   Some editors may prefer one or the other. For example, emacs typically
   likes double quotes better for docstrings.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**No docstring -- Poor**::
+*No docstring -- Poor*::
 
     def squash(string):
         rval = re.sub("", "", string)          <1>
@@ -38,7 +39,7 @@ Example
  <1> The docstring would go right before this line.
  <2> No description of squash in the pydoc output.
 
-**Better**::
+*Better*::
 
     def squash(string):
         """                                    <1>

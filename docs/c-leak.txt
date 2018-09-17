@@ -19,10 +19,11 @@ Recommended in `Python Best Practice Patterns by Vladimir Keleshev
 * Use Python's ``with`` statement when accessing the resource so
   that disposition of the resource is automatic.
 
-Example
+**Example**:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Instead of this**::
+*Instead of this*::
 
     f = open(filename, 'w')
     f.write(data)
@@ -32,7 +33,7 @@ Example
  <1> Imagine 100 lines of output here.
  <2> It would be easy to forget this close.
 
-**Do this**::
+*Do this*::
 
     with open(filename, 'w') as f:
         f.write(data)           <3>
