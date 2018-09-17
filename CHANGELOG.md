@@ -11,6 +11,7 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+ * Change the date of Python 2.7's end of support, per pyclock.org
 ## [0.0.2] / 2018-09-16 / Trouble-shooting classic theme on readthedocs.io
 ### Additions
  * Add untracked files to .gitignore
