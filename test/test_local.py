@@ -8,6 +8,9 @@ import pytest
 
 def test_whitespace():
     """
+    Verify that each chapter file ends with three lines of whitespace (i.e., in
+    the source, this appears as three lines each containing only a vertical
+    bar)
     """
     for path in glob.glob("docs/c-*.txt"):
         fobj = py.path.local(path)
