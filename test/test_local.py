@@ -4,6 +4,8 @@ import os
 import pdb
 import py
 import pytest
+import re
+import util
 
 
 def test_whitespace():
@@ -19,6 +21,26 @@ def test_whitespace():
             if text[idx].strip() != "|":
                 pytest.fail("{} does not end with whitespace lines".format(path))
     return True
+
+
+def test_no_sub_heads_toc():
+    """
+    Verify that no 'Example' sub-headings show up in the rendered HTML TOC
+
+    Examine the sphinxsidebarwrapper div. It will contain nested <ul>
+    structures that should not go deeper than three layers.
+    """
+    pytest.dbgfunc()
+    path_tmp = "docs/_build/html/{}.html"
+    for fpath in [path_tmp.format(x) for x in util.major_files()]:
+        fobj = py.path.local(fpath)
+        soup = bs4.BeautifulSoup(fobj.read(), "html.parser")
+
+        for div in [x for x in soup.find_all("div")
+                    if 'class' in x.attrs
+                    and 'sphinxsidebarwrapper' in x.attrs['class']]:
+            msg = "Too many ul layers in {}".format(fpath)
+            assert util.ul_layers(div) < 4, msg
 
 
 def test_find_index():

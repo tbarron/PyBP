@@ -11,6 +11,9 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+### Additions
+ * Add local test to verify that sub-headings (eg., "Example") do not
+   appear in table of contents
  * Add "remote" test to verify that sub-headings do not appear in TOC from
    the version of the content on readthedocs.io
  * Add __doc__ to describe test_whitespace()
