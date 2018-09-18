@@ -11,6 +11,7 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+## [0.0.4] / 2018-09-17 / Sub-head tests
 ### Additions
  * Add local test to verify that sub-headings (eg., "Example") do not
    appear in table of contents
