@@ -17,8 +17,12 @@ short marker that begins each of the related commit messages.
  * Add "remote" test to verify that sub-headings do not appear in TOC from
    the version of the content on readthedocs.io
  * Add __doc__ to describe test_whitespace()
+
+### Changes
  * Point at 3.6 list of built-ins rather than the 2.7 list in the Python
    Built-Ins chapter
+ * Wordsmithing
+
 ## [0.0.3] / 2018-09-17 / Detail tweaks (details, DT)
 ### Changes
  * Change the date of Python 2.7's end of support, per pyclock.org
@@ -26,6 +30,7 @@ short marker that begins each of the related commit messages.
  * Make the sidebar sticky and collapsible
 ### Deletions
  * Eliminate "Example" and lower items in the Table of Contents
+
 
 ## [0.0.2] / 2018-09-16 / Trouble-shooting classic theme on readthedocs.io
 ### Additions

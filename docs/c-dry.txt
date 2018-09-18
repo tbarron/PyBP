@@ -50,7 +50,7 @@ convention.)
   functions will call these primitives. Keep static messages in a message
   catalog and use them from there.
 
-**Example**::
+**Example**:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

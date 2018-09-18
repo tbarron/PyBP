@@ -19,7 +19,7 @@ the ones you can handle and don't mention the ones that should bubble up.
 **How**: 
 
 * Only specify the exceptions the current level knows how to handle. Others
-  should be allowed to bubble up the stack to a higher level handler.
+  should be allowed to percolate up the stack to a higher level handler.
 
 **Example**:
 
