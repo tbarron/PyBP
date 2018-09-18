@@ -3,12 +3,17 @@ Python Built-Ins
 
 Be aware of
 `Python's reserved words
-<https://docs.python.org/2/library/functions.html>`_
+<https://docs.python.org/3.6/library/functions.html>`_
 and avoid overloading or overwriting them.
+
+Python will allow assignment of just about any value to just about any
+identifier. Since specific identifiers are used to reference Python's
+built-in functionality, it's important to know those built-in identifiers
+and to avoid overwriting their values accidentally.
 
 **Why**:
 
-* Inadvertent replacement of an internal Python function with
+* Inadvertent replacement of an internal Python object or class with
   your own can cause problems from subtle and hard to find bugs all
   the way to spectacular and embarrassing failures.
 
