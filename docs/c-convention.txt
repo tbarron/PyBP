@@ -10,6 +10,10 @@ the conventions of the Python infrastructure that is already defined.
 
 - Because if we keep reinventing the wheel, we'll never get to Denver.
 
+- Projects that follow the conventions are easier to pick up, understand,
+  and change than projects that are arranged or do things in unexpected
+  ways.
+
 **How**:
 
 * Learn how to lay out a python project, use setup.py, distutil, inspect, etc.
