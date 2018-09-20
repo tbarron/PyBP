@@ -1,0 +1,33 @@
+Build Layers of Code, Like a Cake
+------------------------------------------------------------
+
+Functions at a lower level of your layer cake should never call functions
+in higher levels.
+
+**Why**:
+
+* Upward calls (functions in a lower level calling functions in a higher
+  level) are likely to create unresolvable cycles of dependency among the
+  components of your project.
+
+**How**:
+
+* Define and document the layers of software your project requires and
+  ensure that functions never call above their own layer.
+
+In general, to avoid dependency cycles, make sure all the calls a function
+issues are to functions in the same layer or lower.
+
+An implication of this is that nitty gritty work should be done in lower
+layers of the cake with higher layers recruiting functions in lower
+layers to accomplish more comprehensive goals.
+
+For example, if we are parsing text, we might have a function in the lowest
+level that reads bytes from a file. In the next layer up is a function that
+consumes the bytes from the file and assembles them into words. Yet another
+layer up is code that consumes the words to count the frequency of specific
+words or grammatical constructions.
+
+|
+|
+|

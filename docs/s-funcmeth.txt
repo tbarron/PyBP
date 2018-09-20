@@ -2,6 +2,7 @@ Functions and Methods
 ============================================================
 
 .. include:: c-bricks.txt
+.. include:: c-layer-cake.txt
 .. include:: c-foundation.txt
 .. include:: c-return.txt
 .. include:: c-cascade.txt
