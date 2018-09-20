@@ -31,4 +31,7 @@ Policies:
 
  * Avoid passive voice.
 
- * Avoid personal pronouns like "you" and "I".
+ * Use the Oxford comma. That is, in a list of parallel constructions like
+   "this, that, and the other", insert a comma after the penultimate item
+   before the word "and". Without the Oxford comma, one may wind up with
+   ambiguous phrases like, "To my parents, Ayn Rand and God".
