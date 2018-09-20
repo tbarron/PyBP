@@ -1,0 +1,76 @@
+Code Layout Policy
+------------------------------------------------------------------
+
+An important internal policy to define for your project is your code
+layout. I will present the one that I use here. You may have reason to do
+something different, and if so, you should do what makes sense in your
+situation.
+
+**Why**:
+
+- It's much easier to understand your code and find what you're looking for
+  if your code is laid out consistently and neatly.
+
+**How**:
+
+- Decide what makes sense for the kind of work you typically do and then
+  stick with that format. It may evolve over time, but make changes
+  intentionally and with forethought.
+
+
+Here's the overall layout I use for a Python program contained (mostly) in
+one file::
+
+    imports
+
+    def main():
+        """
+        This is the main routine where everything starts. It gets called
+        down at the bottom of the file
+        """
+        ... mainline code ...
+
+    def support_routine_1(...):
+        ...
+
+    def support_routine_2(...):
+        ...
+
+    ... more support routines ...
+    
+    if __name__ == '__main__':
+        main()
+      
+I try to keep things in alphabetical order where this is possible because
+it makes it easier to find what I want. This includes imports and support
+functions. Python doesn't care what order things are defined in as long as
+they're available when called.
+
+With the layout shown above, nothing gets called until the bottom of the
+file where main() is called *if* the name of the current module at runtime
+is "__main__". This is the case when Python was run with the current module
+on its command line.
+
+Files defined like this can be imported without triggering the call to main
+(because on import, __name__ contains the import name of the module rather
+than the string "__main__"), allowing the functions defined in such files
+to be easily reused elsewhere (e.g., in test modules).
+
+This content can be stored in a file with a name like 'myprog.py' and run
+with a command like::
+
+    python myprog.py
+
+For larger modules, that contain a lot of code that needs to be organized
+into multiple files, we would create the directory 'myprog' and put the
+above code in 'myprog/__init__.py'.
+
+When I have functions that are used in multiple files (e.g., two or more
+related programs or two or more class files within a program), I put them
+in a common utility file that can be imported everywhere it's needed. I
+usually alphabetize functions in such utility files to make it easy to find
+what I want.
+
+|
+|
+|

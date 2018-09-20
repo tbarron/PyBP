@@ -5,6 +5,7 @@ General Practices
 .. include:: c-idiomatic.txt
 .. include:: c-convention.txt
 .. include:: c-internal.txt
+.. include:: c-layout.txt
 .. include:: c-tdd.txt
 .. include:: c-dry.txt
 .. include:: c-yagni.txt
