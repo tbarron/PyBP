@@ -11,6 +11,17 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+## [0.2.0] / 2018-09-20 / Chapter on Layer Cake Structure
+### Additions
+ * Add chapter on structuring code like a layer cake
+ * Another reason for convention over configuration
+ * Wordsmithing in c-internal.txt, c-foundation.txt, c-function.txt,
+   c-module.txt
+
+### Changes
+ * Date for 0.1.0 was left undefined -- fixed [uc]
+
+
 ## [0.1.0] / 2018-09-20 / Define code layout policy
 ### Additions
  * Add chapter on code layout
