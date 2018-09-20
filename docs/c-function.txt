@@ -15,8 +15,8 @@ purpose it serves in the overall context of the program.
   with the docstring between them
 
 * Double quotes and single quotes both work as far as Python is concerned.
-  Some editors may prefer one or the other. For example, emacs typically
-  likes double quotes better for docstrings.
+  Some editors may prefer one or the other. For example, emacs seems to
+  work better with double quotes for docstrings.
 
 **Example**:
 

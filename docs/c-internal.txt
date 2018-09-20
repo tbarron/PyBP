@@ -9,8 +9,9 @@ guide future decisions you have to make about project evolution.
 Should all the code for the project go into a single file or should it be
 broken up? Should all the text strings be stored in a message catalog or
 just embedded in the code as literals? What is your convention for creating
-variable and function names? Underscores or camel case? Tabs or spaces? 
-Indentation size?
+variable and function names? Underscores or camel case? Tabs or spaces?
+Indentation size? How are success and failure indicated (see `True Good,
+False Bad <s-funcmeth.html#id4>`_ for a related discussion)?
 
 These questions don't necessarily have one right answer for all situations.
 Small projects may fit in a single file while larger projects need to be

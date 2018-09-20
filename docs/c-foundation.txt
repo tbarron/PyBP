@@ -47,10 +47,11 @@ not. An example is the Unix file system:
 semantic inversion discussed in in `True Good, False Bad
 <s-funcmeth.html#id4>`_)
 
-Build your software in layers with the most primitive layers providing a
-hard-edged foundation for the layers above. If it makes sense, you can
-provide a softer interface at the top for the user but a hard-edged
-foundation will make it easier for your software to 
+Build your software in layers (see `Build Layers of Code Like a Cake
+<s-funcmeth.html#build-layers-of-code-like-a-cake>`_) with the most
+primitive layers providing a hard-edged foundation for the layers above. If
+it makes sense, you can provide a softer interface at the top for the user
+but a hard-edged foundation will make it easier for your software to
 maintain an accurate picture of system state.
 
 
