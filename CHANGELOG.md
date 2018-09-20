@@ -11,6 +11,19 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+## [0.1.0] / 2018-09-dd / Define code layout policy
+### Additions
+ * Add chapter on code layout
+ * Added policy about Oxford comma
+
+### Changes
+ * Wordsmithing (c-python3.txt, c-convention.txt, c-internal.txt)
+
+### Removals
+ * Removed policy against personal pronouns in README.md because I'm using
+   them a lot
+
+
 ## [0.0.4] / 2018-09-17 / Sub-head tests
 ### Additions
  * Add local test to verify that sub-headings (eg., "Example") do not
