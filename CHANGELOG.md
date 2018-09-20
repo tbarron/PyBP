@@ -11,7 +11,7 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
-## [0.1.0] / 2018-09-dd / Define code layout policy
+## [0.1.0] / 2018-09-20 / Define code layout policy
 ### Additions
  * Add chapter on code layout
  * Added policy about Oxford comma
