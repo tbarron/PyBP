@@ -18,7 +18,7 @@ situation.
   intentionally and with forethought.
 
 
-Here's the overall layout I use for a Python program contained (mostly) in
+Here's the layout I use for a Python program contained (mostly) in
 one file::
 
     imports
@@ -70,6 +70,10 @@ related programs or two or more class files within a program), I put them
 in a common utility file that can be imported everywhere it's needed. I
 usually alphabetize functions in such utility files to make it easy to find
 what I want.
+
+Bear in mind that this only addresses file layout. For project layout, see
+the links in `Convention Over Configuration
+<s-general.html#convention-over-configuration>`_.
 
 |
 |

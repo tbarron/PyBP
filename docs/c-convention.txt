@@ -12,7 +12,7 @@ the conventions of the Python infrastructure that is already defined.
 
 **How**:
 
-* Learn how to layout a python project, use setup.py, distutil, inspect, etc.
+* Learn how to lay out a python project, use setup.py, distutil, inspect, etc.
 
   Here are the definitive links for 
 
@@ -24,8 +24,9 @@ the conventions of the Python infrastructure that is already defined.
 
    * https://pypi.python.org/pypi/python_boilerplate_template
 
-* If you're stilling using Python 2.x (please shift to Python 3 as soon as
-  you can), here are the corresponding links:
+* If you're still using Python 2.x (please shift to `Python 3
+  <s-general.html#use-python-3>`_ as soon as you can), here are the
+  corresponding links:
 
    * https://docs.python.org/2/distutils/introduction.html
    * https://docs.python.org/2/distutils/setupscript.html

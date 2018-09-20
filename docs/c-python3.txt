@@ -1,26 +1,29 @@
 Use Python 3
 ---------------------------
 
-Use Python 3. If you *are* still using Python 2, do whatever it takes to
-get to Python 3. Whatever you do, don't start any new projects based on
-Python 2.x.
+According to PEP_373_, support for Python 2.7 will end on January 1, 2020.
+This deadline makes it ever more urgent that all Python software move to
+Python 3 as soon as possible.
+
+If you *are* still using Python 2, do what you can to transition to Python
+3. Whatever you do, don't start new projects based on Python 2.x.
 
 **Why**:
 
-* According to PEP_373_, Python 2.7 will not be maintained beyond 2020.
-  Pythonclock.org_ shows a countdown to January 1, 2020, the anticipated
-  end of support for Python 2. Pyclock.org proposes a Celebration of Life
-  party at Pycon 2020 to celebrate "everything Python 2 did for us."
+* According to PEP_373_, Python 2.7 will not be maintained beyond January
+  1, 2020. Pythonclock.org_ shows a countdown to January 1, 2020, the
+  anticipated end of support for Python 2. Pyclock.org proposes a
+  Celebration of Life party at Pycon 2020 to celebrate "everything Python 2
+  did for us."
 
   The clock is ticking and 2020 will be here before you know it. You have
   been warned.
 
 **How**:
 
-* Learn the differences_ between Python 2 and Python 3 and start writing
-  Python 3 friendly code now. The page linked in the previous sentence
-  suggests constructions that work for both later releases of Python 2 and
-  Python 3.
+* Learn the differences between Python 2 and Python 3 and start writing
+  Python 3 friendly code now. The differences_ page suggests constructions
+  that work for both Python 3 and later releases of Python 2.
 
 * Use the 2to3_ tool. Its page contains a list of the fixers it runs, each
   addressing a particular difference between the versions.
@@ -31,16 +34,17 @@ Python 2.x.
   them.
 
 * The `__future__ <https://docs.python.org/3.6/library/__future__.html>`_
-  module (part of Python itself) and future_ module (no underscores, a third
-  party module availble through the Python package index) provide support
-  for writing Python 3 code that will also run without error on the more
-  recent Python 2 interpreters.
+  module (part of the Python distribution) and future_ module (no
+  underscores, a third party module availble through PyPi_, the
+  Python Package Index) provide support for writing Python 3 code that
+  will also run without error on the more recent Python 2 interpreters.
 
 .. _PEP_373: https://www.python.org/dev/peps/pep-0373/
 .. _pythonclock.org: https://pythonclock.org
 .. _2to3: https://docs.python.org/3.6/library/2to3.html
 .. _differences: https://docs.python.org/3/whatsnew/3.0.html
-.. _future: http://python-future.org
+.. _future: https://python-future.org
+.. _PyPi: https://pypi.org/
 
 |
 |
