@@ -8,6 +8,7 @@ General Practices
 .. include:: c-layout.txt
 .. include:: c-tdd.txt
 .. include:: c-dry.txt
+.. include:: c-quick-fail.txt
 .. include:: c-yagni.txt
 .. include:: c-bugtest.txt
 .. include:: c-change.txt

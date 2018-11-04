@@ -11,6 +11,10 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+## [0.3.0] / 2018-11-04 / Quick Failure chapter
+### Additions
+ * Chapter on quick failure design
+
 ## [0.2.1] / 2018-11-04 / Link Layer Cake to Bricks
 ### Additions
  * Text linking the layer cake idea to the bricks vs monoliths idea

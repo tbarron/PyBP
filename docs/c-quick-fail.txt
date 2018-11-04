@@ -1,0 +1,36 @@
+Fail Quickly
+------------------------------------------
+
+Arrange your code to fail quickly if it's going to.
+
+**Why**:
+
+ * You don't want to force your user to wait half an hour while your code
+   crunches and grinds and thinks before finally saying, "You forgot to
+   give me the trivial-argument-you-don't-really-care-about, so I didn't do
+   anything."
+
+ * Software should optimize the user's time by letting them know about
+   things going wrong as early as possible.
+
+**How**:
+
+ * Vet all potentially problematic inputs, argument combinations, etc.,
+   before launching into any serious computation. If you're going to read a
+   file the user provides on the command line, verify the file exists and
+   contains data in an expected format before spending ten minutes setting
+   up a matrix for processing the data from the file.
+
+ * Put your most recent tests (i.e., the ones most likely to fail) near the
+   top of the test file.
+
+ * If some tests run slower or longer than others, arrange your tests from
+   fastest to slowest. That way, if a fast test fails, not much time has
+   been wasted. If the slow tests run early, you have to wait for them to
+   complete before even finding out whether the fast tests will pass.
+
+ * Do what you can to make all your tests run a quickly as possible.
+
+|
+|
+|
