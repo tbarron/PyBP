@@ -22,11 +22,17 @@ An implication of this is that nitty gritty work should be done in lower
 layers of the cake with higher layers recruiting functions in lower
 layers to accomplish more comprehensive goals.
 
-For example, if we are parsing text, we might have a function in the lowest
-level that reads bytes from a file. In the next layer up is a function that
-consumes the bytes from the file and assembles them into words. Yet another
-layer up is code that consumes the words to count the frequency of specific
-words or grammatical constructions.
+This dovetails with the idea described in `Bricks, Not Monoliths
+<s-funcmeth.html#make-bricks-not-monoliths>`_. Define your smaller
+brick-like functions in the lower levels and use functions in higher levels
+to combine these bricks into larger structures.
+
+For example, if we are parsing text, we might have a function called
+read_file() in the lowest level that reads bytes from a file. In the next
+layer up is function word_stream() that consumes the bytes returned by
+read_file() and assembles them into words. Yet another layer up is code
+that consumes the words produced by word_stream() to count the frequency of
+specific words or to analyze grammatical constructions.
 
 |
 |

@@ -11,6 +11,10 @@ Each release header has the following format:
 The title describes the overall update made with this release. The tag is a
 short marker that begins each of the related commit messages.
 
+## [0.2.1] / 2018-11-04 / Link Layer Cake to Bricks
+### Additions
+ * Text linking the layer cake idea to the bricks vs monoliths idea
+
 ## [0.2.0] / 2018-09-20 / Chapter on Layer Cake Structure
 ### Additions
  * Add chapter on structuring code like a layer cake
